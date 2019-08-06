@@ -1,0 +1,79 @@
+.footer
+	background-color: #2B2727
+
+.footerWrapper
+	display: flex
+	justify-content: space-between
+
+.footerBlocks
+	display: flex
+	justify-content: space-between
+	width: 100%
+	h3
+		color: #ffffff
+		font-family: Segoe UI
+		font-size: 22px
+		font-weight: 300
+		padding-bottom: 15px
+	a,p
+		opacity: 0.5
+		color: #ffffff
+		font-family: "Arial MT"
+		font-size: 13px
+		font-weight: 400
+		line-height: 22px
+
+	p 
+		max-width: 316px
+		width: 100%
+
+	span
+		opacity: 0.66
+		color: #ffffff
+		font-family: "Arial - Bold MT"
+		font-size: 14px
+		font-weight: 600
+		line-height: 22px
+
+.footerBlocks__item
+	padding: 15px
+
+	a:hover
+		opacity: 0.4
+
+.footer__logo
+	display: flex
+	justify-content: center
+	height: 100%
+	flex-direction: column
+
+	span 
+		opacity: 0.8
+		color: #ffffff
+		font-family: "Arial MT"
+		font-size: 13px
+		font-weight: 400
+		line-height: 22px
+
+	h2
+		display: inline-block
+		opacity: 0.22
+		min-width: 300px
+
+@media screen and (max-width:1370px)
+	.footerWrapper
+		flex-wrap: wrap 
+		justify-content: center
+
+@media screen and (max-width:844px)
+	.footerBlocks
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+	.footerBlocks__item
+		display: flex 
+		text-align: center
+		align-items: center
+		flex-direction: column
+

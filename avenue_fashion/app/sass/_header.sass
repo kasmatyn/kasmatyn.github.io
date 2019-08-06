@@ -1,0 +1,546 @@
+.header
+	margin-bottom: 63px
+
+.slogan
+	background-image: url(../img/brand-slogan.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	min-height: 450px
+	position: relative
+
+	h2
+		color: #fff
+		font-size: 48px
+		font-weight: 300
+		line-height: 70px
+		text-transform: uppercase
+		font-weight: 700
+		letter-spacing: 2.4px
+
+		span
+			font-weight: 300
+
+	h3
+		color: #ffffff
+		font-size: 30px
+		font-weight: 400
+		line-height: 70px
+		text-transform: uppercase
+		letter-spacing: 1.5px
+		text-align: center
+
+		span 
+			color: #00c8c8
+
+.slogan__black-screen
+	position: absolute
+	background-color: #333333
+	opacity: 0.75
+	width: 100%
+	height: 100%
+	z-index: 1
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+.container
+	background-color: #333333
+	width: 100%
+
+.header-top
+	margin: 0 20%
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.fixed-main-top
+    position: fixed
+    z-index: 40
+    top: 0
+    left: 0
+    width: 100%
+    background-color: rgba(255, 255, 255, 0.8)
+
+.header-top__left-side 
+	display: flex
+	align-items: center
+
+	span
+		color: #777777
+		font-size: 13px
+		font-weight: 400
+
+	select
+		border: 0
+		outline: none
+		background-color: #333333
+		color: #777777
+		font-size: 13px
+		font-weight: 400
+
+.header-top__right-side 
+	display: flex
+	align-items: center
+
+.two-buttons 
+	margin: 0 100px
+
+	button
+		background-color: #333333
+		border: 0
+		outline: none
+		color: #999999
+		font-weight: 400
+		font-size: 13px
+		padding: 15px
+		cursor: pointer
+
+.one-button
+	display: flex
+	align-items: center
+	padding: 15px 22px
+	background-color: #00c8c8
+	.fsc
+		color: #ffffff
+		font-size: 20px
+		padding-right: 15px
+
+	span
+		border: 0
+		outline: none
+		background-color: #00c8c8
+		color: #fff
+		font-size: 13px
+		font-weight: 400
+		padding-right: 10px
+	
+	.fad
+		font-size: 13px
+		color: #ffffff
+
+.main-general
+	position: relative
+	background-image: url(../img/men.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	min-height: 100vh
+
+	.main-general__ave
+		display: flex
+		justify-content: space-around
+		
+		.letter-a,
+		.letter-v,
+		.letter-e
+			color: #575153
+			font-size: 450px
+			font-weight: 700
+			user-select: none 
+			text-transform: uppercase
+		    
+.main-top 
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 0 5%
+	padding-top: 20px
+
+.main-top__avenue
+
+	h2
+		color: #222222
+		font-size: 24px
+		font-weight: 400
+		text-transform: uppercase
+		letter-spacing: 1.2px
+
+		span 
+			font-weight: 700
+
+.main-top__nav-search
+	display: flex
+	flex-wrap: nowrap
+	justify-content: space-between
+	min-width: 850px
+
+.top-nav
+	position: relative
+
+	.top-nav__list
+			display: flex
+
+	button
+		border: none
+		outline: none
+		cursor: pointer
+		color: #222222
+		font-size: 13px
+		font-weight: 700
+		text-transform: uppercase
+		background: transparent
+		padding: 15px
+		padding-right: 30px
+		display: inline-grid
+		text-align: left
+		
+		&:hover
+			color: #00c8c8
+
+		.fam 
+			color: #989898
+			font-size: 13px
+			padding: 5px 0
+
+.top-nav__block
+	position: absolute
+	z-index: 30
+
+.invisible-block,
+.invisible-nextblock,
+.invisible-second-block
+	display: none
+	max-width: 467px
+	box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14)
+	padding: 15px
+	background-color: #fff
+
+.invisible-block.active
+	display: block
+
+.invisible-second-block
+	position: absolute
+	top: 200%
+	right: 50%
+	transform: translate(50%, 0)
+	z-index: 20
+
+.two-blocks
+	display: flex
+	
+	h3
+		padding: 15px
+		color: #575153
+		font-size: 12px
+		font-weight: 600
+		line-height: 20px
+		text-transform: uppercase
+
+.list-block
+		display: flex
+		flex-direction: column
+		padding: 15px
+
+		li 	
+
+			a
+				color: #727272
+				font-size: 14px
+				font-weight: 400
+				line-height: 30px
+
+.invisible-block__autumn
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	color: #ffffff
+	font-size: 36px
+	font-weight: 400
+	line-height: 48px
+	text-transform: uppercase
+	background-color: #333333
+	width: 377px
+	height: 170px
+	margin: 15px
+
+.invisible-general
+	position: relative
+
+.pop 
+	display: block
+
+
+.burger-menu
+	display: none
+
+	a 
+		padding: 15px
+
+.burger-menu__nav
+	display: flex
+	align-items: center
+	flex-direction: column
+	position: absolute
+	right: 50%
+	top: 0
+	transform: translate(50%, 100%)
+	background-color: rgba(255, 255, 255, 0.8)
+	z-index: 10
+	width: 100%
+   	
+.kam
+	padding-left: 5px
+
+.burger-menu__link		
+	border: none
+	outline: none
+	cursor: pointer
+	color: #222222
+	font-size: 13px
+	font-weight: 700
+	text-transform: uppercase
+	background: transparent
+
+.burger-flex
+	display: none
+
+.blue 
+	color: #000
+
+.burger-button
+	background-color: transparent
+	border: 0
+	font-size: 18px
+	padding-left: 15px
+	outline: none
+	
+.top-search
+	display: flex
+	align-items: center
+	height: 40px
+	border: solid 1px #e7e7e7
+	background-color: #fff
+
+
+	input, button
+		outline: none
+		border: none
+	
+	input
+		padding-left: 15px
+		max-width: 130px
+
+	button
+		background-color: #fff
+		padding-right: 15px
+		cursor: pointer
+
+	form 
+		display: flex
+		flex-wrap: nowrap
+		
+	.fap
+		color: #989898
+		font-size: 14px
+
+.main-top__table
+	a
+		position: absolute
+		bottom: 10%
+		right: 10%
+		display: inline-block
+		border: 2px solid
+		color: #454647
+		font-size: 16px
+		text-transform: uppercase
+		font-weight: 600
+		letter-spacing: 3.2px
+		padding: 23px 33px
+
+@media screen and (max-width:1145px)
+	.header-top
+		margin: 0 5%
+
+@media screen and (max-width:1236px)
+	.main-top__nav-search
+		min-width: 0
+
+@media screen and (max-width:1125px)
+	.top-nav__list
+
+		button
+			padding-right: 15px
+	
+
+	.main-general
+		
+		.main-general__ave
+			
+			.letter-a,
+			.letter-v,
+			.letter-e
+				color: #575153
+				font-size: 300px
+				font-weight: 700
+
+@media screen and (max-width:1051px)
+	.main-top
+		margin: 0
+		padding: 20px 15px 15px 15px
+
+@media screen and (max-width:980px)
+	.top-nav
+		display: none
+
+	.burger-menu
+		display: flex
+
+		.top-nav__block
+			transform: translate(50%, 10%)
+			right: 50%
+ 
+	
+	.main-top__nav-search
+		align-items: center
+
+@media screen and (max-width:830px)		
+	.invisible-second-block
+		padding: 0
+
+		.invisible-block__autumn
+			width: 91%
+			height: 100%
+
+@media screen and (max-width:772px)
+	.two-buttons
+		margin: 0 40px
+
+@media screen and (max-width:733px)
+	.main-top__nav-search
+		flex-wrap: wrap
+		justify-content: center
+
+@media screen and (max-width:700px)
+	.invisible-second-block
+		top: 110%
+		min-width: 275px
+
+		.two-blocks
+			.list-block
+				padding: 0
+		
+		.invisible-block__autumn
+			width: 91%
+			height: 100%
+			font-size: 12px
+			font-weight: 600
+			line-height: 20px
+
+@media screen and (max-width:680px)
+	.main-top__table
+		padding: 10px 10px
+
+	.main-general
+		
+		.main-general__ave
+			margin-top: 10%
+
+			.letter-a,
+			.letter-v,
+			.letter-e
+				color: #575153
+				font-size: 200px
+				font-weight: 700
+
+@media screen and (max-width:636px)
+	.header-top
+		margin: 0 0
+		flex-wrap: wrap
+		justify-content: center
+
+	.header-top__right-side
+		padding: 15px
+
+	.header-top__left-side
+		padding: 15px
+
+@media screen and (max-width:505px)
+	.main-top
+		display: flex
+		flex-direction: column
+
+	.main-top__table
+		padding: 10px 10px
+		right: 5%
+		font-size: 9px
+		font-weight: 900
+
+	.burger-menu__nav
+		position: absolute
+		right: 50%
+		top: 7% 
+
+		.burger-menu__link
+			padding: 15px
+
+@media screen and (max-width:495px)	
+	.invisible-nextblock
+		padding: 0
+
+	.invisible-block__autumn
+		height: 113px
+		margin: 0
+		line-height: 30px
+		width: 273px
+		font-size: 22px
+  
+
+	.list-block
+		padding: 0
+
+@media screen and (max-width:470px)
+	.main-top__table
+		a
+			
+			right: 50%
+			bottom: 10%
+			transform: translate(50%, 10%)
+			padding: 13px 23px
+	
+	.one-button
+		padding: 15px 10px
+
+	.two-buttons
+		margin: 0 0
+
+	.main-general
+		
+		.main-general__ave
+			margin-top: 10%
+
+			.letter-a,
+			.letter-v,
+			.letter-e
+				color: #575153
+				font-size: 100px
+				font-weight: 700
+
+@media screen and (max-width:415px)
+	.burger-menu__nav
+
+		.burger-menu__link
+			padding: 12px
+
+@media screen and (max-width:365px)
+	.main-top__table
+		padding: 5px
+
+@media screen and (max-width:362px)
+	.header-top__right-side
+		flex-wrap: wrap
+		justify-content: center
+		padding-top: 0
+
+@media screen and (max-width:350px)
+	.slogan
+		h2
+			font-size: 32px 
+			line-height: 70px
+		h3
+			font-size: 22px 
+			line-height: 30px

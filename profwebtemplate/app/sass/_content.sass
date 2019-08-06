@@ -1,0 +1,308 @@
+.container
+	margin: 0 15%
+.hexagon
+	display: flex 
+	justify-content: space-around
+	padding-bottom: 109px
+
+.colorButton
+	display: flex
+	flex-direction: column
+	text-align: center
+	padding: 15px
+	font-size: 27px
+	font-family: Segoe UI
+	font-weight: 300
+	color: #5c5b5b
+	opacity: 0.5
+
+
+	span 
+		font-size: 23px
+
+.blue,
+.yellow,
+.green,
+.orange
+	position: relative
+	padding-bottom: 20px
+
+	i 
+	 position: absolute
+	 left: 50%
+	 top: 50%
+	 transform: translate(-50%,-60%)
+	 font-size: 80px
+	 color: #fff
+
+.information
+	display: none
+	padding-bottom: 90px
+
+.show
+	display: inline-block
+
+.showbut
+	opacity: 1
+
+.information__ipad
+	display: flex
+	justify-content: center
+	
+	img 
+		padding-bottom: 58px
+
+.information__block
+	h2
+		color: #4f4f4f
+		font-family: Segoe UI
+		font-size: 39px
+		font-weight: 300
+
+	p 
+		color: #818181
+		font-family: UniversCE
+		font-size: 24px
+		font-weight: 300
+
+.cssauthor
+	display: flex
+	justify-content: space-between 
+	padding-bottom: 98px
+
+.blockList
+	padding-top: 25px
+	h4
+		color: #4f4f4f
+		font-family: Segoe UI
+		font-size: 33px
+		font-weight: 300
+		padding-bottom: 25px
+
+.blockListItems
+	color: #8a8888
+	font-family: UniversCE
+	font-size: 16px	
+	font-weight: 300
+	
+	li 
+		display: flex
+
+	.fas
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 18px
+		width: 18px
+		background-color: #e67624
+		color: #fff
+		border-radius: 50%
+		font-size: 10px
+		text-align: center
+		vertical-align: middle
+		margin-right: 15px
+
+		&:before 
+			vertical-align: sub
+
+
+.formSection
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-bottom: 20px
+
+	h3
+		color: #ffffff
+		font-family: Segoe UI
+		font-size: 28px
+		font-weight: 300
+		padding-bottom: 20px
+	
+	button 
+		background-color: #444444
+		border: none
+		cursor: pointer
+		color: #ffffff
+		font-family: Segoe UI
+		font-size: 16px
+		font-weight: 300
+		height: 25px
+
+	input
+		margin: 5px
+
+	form 
+		border-radius: 2%
+		max-width: 470px
+		width: 100%
+
+.formSection__member
+	padding: 15px
+
+	form 
+		background-color: #e67624
+		padding: 10px 16px 20px 29px
+
+		button
+			min-width: 94px
+
+	input
+		max-width: 150px 
+		width: 100%
+		height: 25px
+		color: #4f4f4f
+		font-family: Segoe UI
+		font-size: 16px
+		font-weight: 600
+		padding-left: 12px
+
+.formSection__login
+	padding: 15px
+
+	form 
+		background-color: #01d4f3
+		max-width: 470px
+		width: 100%
+		padding: 10px 16px 20px 29px
+
+	input
+		height: 25px
+		max-width: 265px
+		width: 100%
+		color: #4f4f4f
+		font-family: Segoe UI
+		font-size: 16px
+		font-weight: 600
+		padding-left: 12px
+	
+	button
+		background-color: #029bb1
+		min-width: 110px
+
+.member__leftBlock,
+.member__rightBlock
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+@media screen and (max-width:1560px)
+	.cssauthor
+		flex-wrap: wrap
+		justify-content: center
+
+	.blockList
+		h4
+			text-align: center	
+
+
+@media screen and (max-width:1401px)
+	.formSection
+		justify-content: center
+		flex-wrap: wrap
+
+
+@media screen and (max-width:1030px)
+	.headerTop
+		justify-content: center
+
+@media screen and (max-width:1000px)
+	.colorButton
+		font-size: 18px
+		span 
+			font-size: 18px
+		img 
+			max-width: 60%
+
+		.fas 
+			font-size: 40px
+
+@media screen and (max-width:885px)
+	.information__block
+		h2
+			font-size: 24px
+			text-align: center
+
+		p 	
+			font-size: 16px
+
+	.information 
+		padding-bottom: 20px
+
+	.information__ipad
+		img
+			padding-bottom: 0
+
+@media screen and (max-width:838px)
+	.colorButton
+		.fas 
+			font-size: 30px
+
+@media screen and (max-width:763px)
+	.hexagon
+		padding-bottom: 30px
+		flex-wrap: wrap
+	.colorButton
+		flex: 1 0 50%
+		img 
+    		max-width: 37%
+
+@media screen and (max-width:705px)
+	.formSection
+		h3
+			font-size:
+
+@media screen and (max-width:500px)
+	.container
+		margin: 15px			
+
+	.cssauthor
+		padding-bottom: 40px
+
+@media screen and (max-width:470px)
+	.blockList
+		h4
+			font-size: 22px
+
+@media screen and (max-width:450px)
+	.colorButton
+		padding: 0px
+		padding-bottom: 10px
+		font-size: 15px
+
+		img 
+			max-width: 40%
+		.fas
+			font-size: 25px
+			transform: translate(-50%, -60%)
+
+	.blue,
+	.yellow,
+	.green,
+	.orange
+		padding-bottom: 0px
+
+@media screen and (max-width:444px)
+	.formSection__login,
+	.formSection__member
+		padding: 0 0 15px 0
+
+	.member__leftBlock
+		flex-wrap: wrap
+
+		button
+			margin: 0 auto
+
+@media screen and (max-width:345px)
+	.member__leftBlock
+		justify-content: center
+
+	.member__rightBlock
+		justify-content: center
+		flex-wrap: wrap
+
+@media screen and (max-width:500px)
+	.footer 
+		.container
+			margin: 0px
+

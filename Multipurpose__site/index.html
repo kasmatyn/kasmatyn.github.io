@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Multipurpose</title>
+	<link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="slick/slick/slick.css">
+	<link rel="stylesheet" href="css/css.css" alt="site">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+		<div class="header__top">
+			<div class="header__item"><i class="fas kam fa-shopping-cart"></i><span>Free shipping ON all order</span></div>
+			<div class="header__item"><i class="far kam fa-money-bill-alt"></i><span>100% MONEY BACK GUARANTEE</span></div>
+			<div class="header__item"><i class="far kam fa-clock"></i><span>ONLINE SUPPORT 24/7</span></div>
+		</div>
+		<div class="header__bottom">
+			<div class="header__logo">
+			<a href="/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="81" viewBox="0 0 210 81"><g><g><image width="210" height="81" xlink:href="data:image/png;base64,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"/></g></g></svg></a>
+			</div>
+			<div class="header__search">
+				<div class="search-block">
+					<input class="search-block__input-form" type="text" placeholder="Search"><div class="input-select"><span>|</span><select><option>All Categories</option><option>All Categories</option></select></div></input>
+					<div class="search-click"><a href="#"><div class="search-click__search-button"><i class="fas fa-search"></i></div></a>
+				</div>
+			</div>
+				<div class ="header__social">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+	<section class="section">
+		<div class="section__list-block">
+			<div class="container">
+				<div class="row">
+				<nav class="menu">
+					<a href ="#" class="menu__link">HOME</a>
+					<a href =".section__main-buy" class="menu__link">SHOP</a>
+					<a href ="#" class="menu__link">FEATURES</a>
+					<a href ="#" class="menu__link">MEGA GROUP</a>
+					<a href ="#" class="menu__link">ABOUT</a>
+					<a href =".BLOG-box" class="menu__link">BLOG</a>
+					<a href =".footer-middle" class="menu__link">CONTACT</a>
+				</nav>
+					<div class="burger-menu">
+					 		 	<button class="burger-button" type="button"><i class="fas fa-bars"></i></button>
+						 		 	<div class="burger-flex">
+							 			<nav class="burger__menu__nav">
+								 			<a href ="#" class="burger-menu__link">HOME</a>
+											<a href =".section__main-buy" class="burger-menu__link">SHOP</a>
+											<a href ="#" class="burger-menu__link">FEATURES</a>
+											<a href ="#" class="burger-menu__link">MEGA GROUP</a>
+											<a href ="#" class="burger-menu__link">ABOUT</a>
+											<a href =".BLOG-box" class="burger-menu__link">BLOG</a>
+											<a href =".footer-middle" class="burger-menu__link">CONTACT</a>
+									 	</nav>
+							 		</div>
+					 		</div>
+				<div class="section__button"><a href="#"><div class="Shopping"><i class="fas fa-shopping-cart"></i>Shopping cart (0)</div></a></div>
+			</div>	
+			</div>
+		</div>
+		<div class="section__slider-block"><i class="fas fak fa-chevron-right"></i><i class="fas fal fa-chevron-left"></i>
+			<div class="section__auto-slider">
+				<div class="auto-slider__item"><div class="auto-slider__text"><h5>New!</h5><h1>collection 2016</h1><p><span></span>for<span></span></p><h3>Men & women</h3></div></div>
+				<div class="auto-slider__item"><div class="auto-slider__text"><h5>New!</h5><h1>collection 2016</h1><p><span></span>for<span></span></p><h3>Men & women</h3></div></div>
+				<div class="auto-slider__item"><div class="auto-slider__text"><h5>New!</h5><h1>collection 2016</h1><p><span></span>for<span></span></p><h3>Men & women</h3></div></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="section__menu">
+				<span>Go quickly to <i class="far fa-arrow-alt-circle-right"></i></span>
+				<a href="#">Women</a>:<a href="#">Men</a>:<a href="#">Women</a>:<a href="#">Accessories</a>:<a href="#">Fashion</a>:<a href="#">Features</a>:<a href="#">Clothings</a>:<a href="#">Bags and Wallets</a>:<a href="#">Fragrances</a>:<a href="#">Caps & Hats</a>
+			</div>
+			<div class="section__content">
+				<div class="photos-girls">
+					<div class="zal"><div class="photos-girls__first photos-girls__general"><img src="image/Layer_430.png"><div class="photos-girls__block"><h2>CLOTHES</h2><a href="#">Click here</a></div></div></div>
+					<div class="zal"><div class="photos-girls__second photos-girls__general"><img src="image/Layer_428.png"><div class="photos-girls__block"><h2>FOOTWEAR</h2><a href="#">Click here</a></div></div></div>
+					<div class="zal"><div class="photos-girls__lust photos-girls__general"><img src="image/Layer_429.png"><div class="photos-girls__block"><h2>HAND BAGS</h2><a href="#">Click here</a></div></div></div>
+				</div>
+			</div>
+			<div class="section__main-buy">
+				<div class="for-men-wrapper">
+					<div class="for-men-wrapper__men joint-headline">
+						<h3>MEN</h3>
+						<div class="for-men-wrapper__click for-men-wrapper__click-one">
+							<i class="fas hal fa-chevron-left"></i>
+							<i class="fas har fa-chevron-right"></i>
+	    	   			</div>
+    	   			</div>
+				<div class="for-men">
+						<div class="for-men__photo-men"><div class="photo-men-women"><img src="image/Layer_415.png"><div class="photo-men-block"><h2>FOR MEN</h2><a href="#" class="button-click">More</a></div></div></div>
+						<div>
+						<div class="for-men-wrapper__click for-men-wrapper__click-slick">
+							<i class="fas hal fa-chevron-left"></i>
+							<i class="fas har fa-chevron-right"></i>
+	    	   			</div>
+					<div class="slider-buy">
+						<div class="slider-buy__legs">
+							<div class="slider-buy__slide">
+								<img src="image/Layer_413.png">
+								<span>Printed Chiffon Dress</span>
+								<div class="side__money-star-button">
+									<div class="slide__money-star">
+										 <p>£ 61.19</p>
+										 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+										 </div>
+									</div>	
+									<div class="slide__button">
+											<a href ="#">Add to cart</a>
+									</div>
+								</div>	 
+							</div>
+						</div>
+						<div class="slider-buy__legs">
+							<div class="slider-buy__slide">
+								<img src="image/Layer_414.png">
+								<span>Printed Chiffon Dress</span>
+								<div class="side__money-star-button">
+									<div class="slide__money-star">
+										 <p>£ 61.19</p>
+										 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+										 </div>
+									</div>
+									<div class="slide__button">
+											<a href ="#">Add to cart</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider-buy__legs">
+							<div class="slider-buy__slide">
+								<img src="image/Layer_413.png">
+								<span>Printed Chiffon Dress</span>
+								<div class="side__money-star-button">
+									<div class="slide__money-star">
+										 <p>£ 61.19</p>
+										 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+										 </div>
+									</div>	
+									<div class="slide__button">
+											<a href ="#">Add to cart</a>
+									</div>
+								</div>	 
+							</div>
+						</div>
+						<div class="slider-buy__legs">
+							<div class="slider-buy__slide">
+								<img src="image/Layer_414.png">
+								<span>Printed Chiffon Dress</span>
+								<div class="side__money-star-button">
+									<div class="slide__money-star">
+										 <p>£ 61.19</p>
+										 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+										 </div>
+									</div>
+									<div class="slide__button">
+											<a href ="#">Add to cart</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					</div>	
+				</div>
+				</div>	
+			<div class="section__main-buy">
+				<div class="for-men-wrapper">
+						<div class="for-men-wrapper__men joint-headline">
+							<h3>WOMEN</h3>
+							<div class="for-men-wrapper__click">
+								<i class="kal fas fa-chevron-left" id="kal"></i>
+								<i class="kar fas fa-chevron-right" id="kar"></i>
+		    	   			</div>
+	    	   			</div>
+					<div class="for-men for-women">
+	    	   			<div>
+	    	   				<div class="for-men-wrapper__click for-men-wrapper__click-slick">
+							<i class="fas mal fa-chevron-left"></i>
+							<i class="fas mar fa-chevron-right"></i>
+	    	   			</div>
+						<div class="slider-buy__slider-wrapper">
+							<div class="slider-buy__legs">
+								<div class="slider-buy__slide">
+									<img src="image/Layer_418.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>	
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>	 
+								</div>
+							</div>
+							<div class="slider-buy__legs">
+								<div class="slider-buy__slide">
+									<img src="image/Layer_417.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-buy__legs">
+								<div class="slider-buy__slide">
+									<img src="image/Layer_418.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>	
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>	 
+								</div>
+							</div>
+							<div class="slider-buy__legs">
+								<div class="slider-buy__slide">
+									<img src="image/Layer_417.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>
+								</div>
+							</div>	
+
+				</div>
+			</div>
+						<div class="for-men__photo-men for-men__photo-men--photo-women"><div class="photo-men-women"><img src="image/Layer_416.png"><div class="photo-men-block"><h2>FOR WOMEN</h2><a href="#" class="button-click button-click-women">Click here</a></div></div></div>
+					</div>
+					</div>			
+				</div>
+				<div class ="section__general">
+					<div class="sorting joint-headline joint-headline--grey">
+						<div class="sorting__elements sorting__span-elements"><a role ="button" class="slider-button" data="but1"><span class="but-span colorforbut">New arrivals</span></a></div>
+							<div class="sorting__buttons">
+								<i class="pal fas fa-chevron-left"></i>
+								<i class="par fas fa-chevron-right"></i>
+							</div>
+					</div>
+					<div class="sorting__items first__items" >
+						<div class="slider-buy__slide new lel">
+									<img src="image/Layer_423.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>	
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>	 
+								</div>
+						<div class="slider-buy__slide">
+									<img src="image/Layer_425.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>	
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>	 
+								</div>
+						<div class="slider-buy__slide">
+									<img src="image/Layer_424.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>	
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>	 
+								</div>
+						<div class="slider-buy__slide">
+									<img src="image/Layer_426.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>	
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>	 
+								</div>
+								<div class="slider-buy__slide">
+									<img src="image/Layer_423.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>	
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>	 
+								</div>
+						<div class="slider-buy__slide">
+									<img src="image/Layer_425.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>	
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>	 
+								</div>
+						<div class="slider-buy__slide">
+									<img src="image/Layer_424.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>	
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>	 
+								</div>
+						<div class="slider-buy__slide">
+									<img src="image/Layer_426.png">
+									<span>Printed Chiffon Dress</span>
+									<div class="side__money-star-button">
+										<div class="slide__money-star">
+											 <p>£ 61.19</p>
+											 <div class="slide__star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+											 </div>
+										</div>	
+										<div class="slide__button">
+												<a href ="#">Add to cart</a>
+										</div>
+									</div>	 
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">	
+					<div class="BLOG-box" id="BLOG-box">
+						<div class="BLOG joint-headline">
+						<span>FROM THE BLOG</span>
+						</div>	
+						<div class="info-blocks">
+							<div class="info-blocks__block">
+								<div class="info-blocks__photo"><img src="image/Layer_420.png"></div>
+								<h3>CURABITUR LIGULASAPIEN</h3>
+								<p>Vestibulum sagittis, nisl nec pellentesque suscipit,arcu nisi maximus neque, vitae finibuserat odio eu lacus. Curabitur malesuadaerat eros, quis dignissim dui accumsan id.Cras non imperdiet metus. Sed nec turpis nec.</p>
+							</div>
+							<div class="info-blocks__block">
+								<div class="info-blocks__photo"><img src="image/Layer_421.png"></div>
+								<h3>CURABITUR LIGULASAPIEN</h3>
+								<p>Vestibulum sagittis, nisl nec pellentesque suscipit,arcu nisi maximus neque, vitae finibuserat odio eu lacus. Curabitur malesuadaerat eros, quis dignissim dui accumsan id.Cras non imperdiet metus. Sed nec turpis nec.</p>
+							</div>
+							<div class="info-blocks__block">
+								<div class="info-blocks__photo"><img src="image/Layer_422.png"></div>
+								<h3>CURABITUR LIGULASAPIEN</h3>
+								<p>Vestibulum sagittis, nisl nec pellentesque suscipit,arcu nisi maximus neque, vitae finibuserat odio eu lacus. Curabitur malesuadaerat eros, quis dignissim dui accumsan id.Cras non imperdiet metus. Sed nec turpis nec.</p>
+							</div>
+						</div>
+					</div>
+
+					<footer class="footer">
+						<div class="footer-top">
+							<div class="footer-top__logo">
+							<a href="/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="81" viewBox="0 0 210 81"><g><g><image width="210" height="81" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAABRCAYAAACnvfg0AAAS3ElEQVR4Xu1db4gkx3V/NTN7inPGSAdJTCDY6HQyjr/pztwuSHC5mZU5twTG5s7yN4HJHRiDCfnghYRw+YPRkUA+haANGH+xjbX4DxbtkzS957UsuBXSYWyMDTppceJgrMR4JUUg7Ju5Cr/Z7lVtTXW9V929s7N91SDO3qmuP6/er957v3pVrSg+BymBJ4joi0YHMiJaPsgOxbarSUBVey2+1ZAEXiaik0ZdK0R0paG6YzUzlEAEUrPCti3MGhFdKGniHiL6rfUbrBGsUnwOmQQikJqdsBALc5GInrSaj/PR7HzMrLY4cc2J2mVhThHRjZImACKAqXhifNTcXMy8pgik5kRuW5gtIjruqf41IrrX+B2xEWKk+BxCCUQg1Z80l4vmqtW0TgAQgGQ+iKW2ieg8EQ2ICBYO1myViBBr+R4QFngP/+Jd08rB0qEO1B2ffZJABFJ9wdoumqtGKPEx4wcX+KDspqtn1lNmrQBIEBwAke9B+yAyytzM+lK4w2uIQKqvALaL5qoRILlk/CABn10P3ES4i8UD6zPMLZdkFAATrKJZh+S9WEYggQgkgZA8ReB+PZXHOma8A6U1V3/bPQPtjXftB+/g72ZdRRlzj6kMRHABi3ZRh23hbEDXG318e1cCrQTSuXPn3jcajT6vtX6EiN5PRP+ntcbq/c/r6+uv++b/7Nmzx7vd7gO9Xu+7V69e/Z1QV2wL4yMOAALQ5OYD5YfFKkDgcv1MINk0O95DjGVbG8RLGHfxlBIg/X7/Tzqdzhe01g/nbijA/vTCwsK/Xr169S1GZg90u93333333c+ura2NhTJrVbHWAens2bMPdDqd7xDRnzlm6n+01o+tr69/v2wWl5eXn9NaI56AIv1llmXfEsy4bWGg1GUEAVKCENeYj4sm11aZok7EQ7CCJjjwfhmZYNczNef9fn9ZKfWNEiv5Wrfb/dSzzz77Y5ccTp48uXDs2LEfaa0/QkS/IqJPZ1n2gkBmrSrSKiD1+/0/V0r90Ars7Qn7vVLq8eFw+HX7h8FgYFqCt0aj0Yc2NjZ+zcy4y8L45AoQmOSAa//ItSdVxEj2+7AyvrjHZPFs0oP6/f5fKKW+R0R/4BnnW0qpTw6Hw3WHzP6JiP4m//vro9Hovo2NjbdbhRLBYFoDpKWlpfccPXoULs6H83FjJb6mtYYSwF05ashDK6X+djgcfqn422AwOENEzxDRXfibUmplOBxK8t5sC8NtrNrWy5Vf59uTkpAbZVO/J2UJ7pxS6idE9Mf5C7dyVxCyg1U+YlR0Syl1cTgcfqX4W7/ff0wp9TWIK//bZ7Ms+7JA71pXpDVAGgwGZp4brM5jw+Hw25ix5eXlP9Vaf9dKECWt9TWl1FUiup+IHieihXyGf7awsPCAMEZCDGKu+r7EU5f1crl1dsxlkgS2qxailIjDUNfkGQwGAMFn8v+7rbX+2Pr6+kv5b1iQnnZsKn9Ha/1DpRT6/ZgBou9nWdYnojr9CxnLXJVtBZBAEHQ6nZ8bQLiYZdl/mJJ++OGHj47H468rpR5lZuDNTqfz4HPPPfdT4UzZiuNLC7KtV1nwb1sdM+ay27NpcVG3+/3+Q0qp5/PCt2/fvv3ItWvXsKjsPufOnfujW7duYQFa9FWqlPpvIjo9HA4RI92RTyuA1O/3/0Up9df5DKZZloGtm3rOnz/ffeONN/5Na23u6ZjlfpvHAj8QaoPNiuE1n0xt6+Wio11WC5u5BZlgx0g+ShuxmJP0GAwGZj3/nmXZ51xjfvTRR//wnXfe+SoRfaJEJr/sdDofD1h4hKI9XMVaASSIPF9hH+/1ev/4zDPP/MI3DYPB4FNKqb/PmSYUfVsp9U2t9d9lWfZfAVPoYuAQp0HpsY8DS2LuJ9nWZI+rlbdr14n3YeWKx0WNw7IBMAXY0DZABNLC6Wpevny58/zzz3+s0+mg3F9lWfamZ9yq3++j3RWl1Afzcoj1vjoajf5hY2PjNwEya2XR1gCpyuycOXMGTNXdRPSbjY2NUYU6XEAqqrHdNpf1Mi1N8Z5tcVxAsPeRuK67AMu94/z9zJkz7+12u0cfeuih/718+fLtSpW08KU7GkgNzCdWfii1K0vBdrk4S1N0x7ZarsN+aA+EBJdjhzrBIgKMMc+ugQkvqyICqb5wEdMAJIVSw72C8oI6N5VXcujP3mxF73xzBCtXZH2bR9bRLv6DuxdP3NafY7aGCCRWRLFAlAAvgQgkXkaxRJQAK4EIJFZEsUCUAC+BCCReRrFElAArgQgkVkSxQJQAL4EIJIeMbi4tnddEg47W9+qdexDepbeV2lJab2mwYkrdONLtZh944YV4H4JDjq989KP3qm53wioqonsgU6sYmEXst91QWmf3vfjioaXo1c3FxZkkGWqi5fs3N8VU7KunT1/UStn3vu3Ogx6Pj9//0kuNHZv+zwcfvOf3oxF270Flu/aFfMvSGim1duL6de6SEmLkvXJic1OScT7Vlyr13lxc9G0o04nNzUoLbT53kKVJyQuWdbVFWq8e6fVWqyxOPhkorS/d9+KLuwm7fGf2luBkNb9AWlwcOlYwc3SVlc4W4qunT5/Unc5TpLXriLdc5kptIY/Pt2BUUXhJB6rUyylHKJBgySeHFuvKkWhbab0SqviMDFDnclWrx8lqLoE0UWyl7OPYtj5tn9jcNG/mkejbVJm8rZBLRCTtrB3p9S65VtUqCi9psEq9nHJIgQRr/rvx+AmlddktSJIhTJVRRNlCr3dBap0E3tWNI73esrQ+s0OcrOYSSK8sLT0pmZS65jr34ctSfCpNfvESlOC+zc2pL0tUUXhJR6rUyymHBEi5S4yFKMyNkwxqp4zYkgiAhPrWTmxult3HXtorTlZzB6R8YuzL5csGeOPE5qaZGS2fHiJ6lXcfg+ozC5fFhFUUXtKJKvVyysEBaQYgKoYuApMQSKgzOCzgZDV3QOI6bCuV0vpUFb9X6D7izPmEpUO7eoeEkKy8V05sbjqvH66i8PMIpBmCqBg+65YFAIlC9YbTy/kD0tLSayHBqlZq9f7r18sO6vlMtf0JFrssKFkwPXso2YkCjccD0hqB9XT2tVJbR7rdU2V+eFuAdHNxkZPfrjXRSq2R1ms2CVNsM0jc+Lwyr1sWAiQskL55spWhLpCCTaBk9SwrM2F9tDavmhJVd6TXOxYaQHrdOqGQ8xhrz5XBHM3fBiC9srg4UHvvyyubp1LSxXwBcux0u08yLO3OK0pdKNtmCALSTlq9M451DeZQAalGzBIM+CYVeqJY2PPSGium94sSTbZrTniVejnlKIuRbi4uSg4Wlrq3ZagTkUxKbZ24ft35lY9QIOX9EOkOJyvOtRM1IjIbTKF8dbe/0GC+hc1O90E2j3BLrZ9/Izp43HD50BZnGasovES+VerllMMFJIk1qupuY5w3FxftE8JTwy9jaysCCbEvmyzAyWp+gOSnvNf0eLyiut1SoIVS4YzQa7GBPsWvovDzBCRW0YVucdmYchID81yaXVJxa8Enxm09Hp/yZcocCiCxwsv9Yp/rF+LvTlY+htTAqnpXt7vCWRiJktd1wSRtVAEopxy2RZJsTYQuaK6xcelheMeVIlbVIuV98C6enKzmwiJ5BWe4bZyAQ/LvhPEYklFXldZrVSj2kqDVl9sY7FIWbcwCSCwZVMHF9rjeZV/s2OEcHLlzNYGEan3bFt68xLkAEmMd9iiXr2yIb86tMNOO+SShEsmpNyTJqbOKzWYKJJ7yDiYYPHLy0uuuuWaAdIWUAivszaf0xF/zDSQueLWpbQYA20d6veMSd0xAbnAe1RpS/xcWFtYk7QkVnmuz6u9OS8ctJrZrx1lxSdAuHQBn/VyuPGeVMV+SHE5XcisnK84iScddWo5LM/EFr65VRwAAsXsUsKnoD1Sx4TgaXZEc62jA/agyJ40AiY0rGzzaws6zw43kgIQjKlx4UMRLdnLrXAOJE5YnX62cIg3w0/chzYUF8aEGEnN2jVs0Q1cATlZ2exIgoQ+S/Sp7EZ9rIDEWoZRF4dxB3+63PZkA063R6CnRrrpME7w5YZxyyJoILtWMRWoJkKQLqBkvzS2QOMqbo1F9bkYoFQ61zE0+AtzQ07EurS4FUwSSfBHgZFXVIuXzjTNv7Dm0Irl1boHE+KosacANLIQKL6Z2Yp1u3TqvlQo/Jm3pRxmDyCmHXM2CSjZjkbi9t0MQI5lSE8VL+QZzfg2B/cnS3eoOjGxg8rW2FXNXteBIQy0qtri4QxENqrp9+7BpGIQeo3AjQOJYuxCXmhsI575XYe1c92EICafia/HzBSROSJyQhb+zVk1YDxVHJwAotXN8Qur+TSmwNCCW9k1IqzcCJEGQXmvxMscsUPCptqrKVpiEi8358rSlqo2HTrRZXjAhdap/19zWvDmmrBNwCbC5x1mqplZNiTCqzCPnHk/tIzE3O+FYeBP3aGC8HNXusn5VZDBh8XauDat15QDn2rF0rmSS94Bop9O+LO/QKsvLB1DhVRrlFNGlWFUnm+tflXq5/ttA4rYr0EeOJOLGkRMB3qvYUMZ1Bq2KDIr+1PWSZg4kbvIkgg4pI9lth+sWkp2wJ2Bl7n2owyyFjLOKEnFz4doXErhBtV1q1hqVXGBSRQaWO+lNA/LNx0EAyZuMGKI8wrLc8eTJt43265qmtgFJxHRVvKln4mYJbpDaz4tlWEKlROlmCiThJAjxIS9WRoVb5nyblLoUmpDKBMVTMUPdVbNs1FXqrWKRRPELjjlUuEtDQDCg+dKN+ioysOWZE0svc8mt9nszBZLPLaiyiVoMRnAj0BTD4wkwJ4cIJXlz7Kay406AJibbBaYq9dYAkuhuDczp7fH4EifLXI6iT3n6XPUqMnDJUqBPU6/NDEhc5+oGqdy+lM0mCXz9yX3eZZfk59nJcAt913O1iv624gn2SHhRHtYJoLKtPTwCsJ8BWwpeer0pIE2sLnMv+oFZJMb3rU2bcm6jCVSJH75HUMbddvg7R3vvKpBjp7/JybYUO/jAIKcsviRUab6a3AFnS9a91y6YgQ7Rk5lYJMER5dobeZybVfjWTewZsFPuiRHaAiTIYJ/uTXeJlwVRbkWCFxPfXIYsFjMBErfyhd56WTZ4bgUp/OvGvj5RPgulFHCbgDQjMIlAtB9AChnfbIDkT3Zs7MYeblPNZJLy1QYxDv5r8vHeU902IEFw+3AUZTIfoRfQ7JdsubABfd13IHGdqEsy2AjgNvNsKhzg6xB9URr3MIhzXnNcN5aRoLyKEnGeQuhBvcaOoiiFu9ZXKmxFNOramXLnvJ39B5J/57/2LvgUkHi2xRl0wt273elcDGCQ3m0aE6/1quRre1UU/rAAqbBOkyMHOIoS/sExLESroR8YK+SzX7I16i+9YbbSpw0lE3uYy+QuImht97dP3/2ObIZvyYZ80vMwyyW07zkZge/GQpa4vWfPVgEocU2ErOobejxe4/abQtufZfkIpFlKO7bVWglEILV2auPAZimBCKRZSju21VoJRCC1dmrjwGYpgQikWUo7ttVaCUQgtXZqD35gSZJgsxs3MhX3beMzolfSNMVlIpMnSRJp8uulNE1XjffABqJ+/Fs8qH8tTdMrrtEnSeLbZ8ryvuHf3Yd5pyh3KQLp4PWtlT1IkgTHIqDkUGooOC4OKZR/NU3TyXd/kyTB382L7XG5DABif61+K01TUOUm+AAsgLK4mAT0Ot7Fhu6FNE0nH9E2wAcgoT+7QM5/Qx+KbwIDsCbQy94xq96KQGqlGh/soJIkATBwL8epNE33fMw6/+0e+++GssOCPZmmqVM3cwsGwCzbQDGACSuHPqD9Cfjy3wCKPZbNAhrafiJN02PSd4pyEUgHq3OtbD1JElieYRkYfINOkqQUSEW9RHTcBSILFAAy3Lzdb/rmbpoPSLBMuAoBIJ24eNw7EUitVOH5GFTurkEh4V7ZbpS3kwyQcMXwdpqmF7iRuurhQGH0OwKJE3D8fTYSyIkG3EwKIGF1h3XYdbPKesEAyeuaWRZpyr0UAGlyGiC6drPRkdiKUAK5K2Yya1OsnV1VU0ByuWU5kMrIBriUIBx2rZFRh2/EYCFXYowkVIpYrJ4EclAVzBiUr4yi9sVIIRapiHd2CQ8PlQ1LCcuJfkmZvkIgEzYxAqmefsS3AyVgEAbHXK5ewzESy8AV7bkYxkg2BE5uLD5bCfhilYNg7ZIkQSwHSwg2cE8cx8VVkbWbre7cUa3lRMO9xaarRQJMqHEiCrZIuYXAHlHpPlJeBvUH7SMlSTL56Fiapns2giOQ7ijVna/BJkkCRYfC4ykyG/C/8Xes/shs2N3fsYDm3ZA1wIR4q0pmg3MfKae+cQL2hkmvewgKs9sxs2G+VLBdvXHk2iGQR0C/mzNnj1i6metgBFEVWEGA1Fl/Doo9rJwFYgAdYFopyBBhrt2V/wfVMMuphkcLfQAAAABJRU5ErkJggg=="/></g></g></svg></a>
+							</div>
+							<h3>Sign up for our Newsletter !</h3>
+							<div class="footer-top__submit">
+								<form method="get">
+									<input type="text" placeholder="hello@psdfreebies.com"></input>
+									<button type="submit"><span>Submit</span></button>
+								</form>
+							</div>
+						</div>
+						<div class="footer-middle">
+							<div class="footer-middle__text">
+								<p>Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus neque, vitae finibus erat odio eu lacus. Curabitur malesuada erat eros, quis dignissim dui accumsan id. Cras non imperdiet metus. Sed nec turpis nec.</p>
+							</div>
+							<div class="list-blocks">
+								<div class="list-blocks__information">
+									<h3>INFORMATION</h3>
+									<nav>
+										<ul>
+											<li><a href=""><i class="fas yolo fa-caret-right"></i><span>Careers</span></a></li>
+											<li><a href=""><i class="fas yolo fa-caret-right"></i><span>Investor Relations</span></a></li>
+											<li><a href=""><i class="fas yolo fa-caret-right"></i><span>Press Releases</span></a></li>
+											<li><a href=""><i class="fas yolo fa-caret-right"></i><span>Shop whit Points</span></a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="list-blocks__care">
+									<h3>CUSTOMER CARE</h3>
+									<nav>
+										<ul>
+											<li><a href=""><i class="fas yolo fa-caret-right"></i><span>Returns</span></a></li>
+											<li><a href=""><i class="fas yolo fa-caret-right"></i><span>Shipping Info</span></a></li>
+											<li><a href=""><i class="fas yolo fa-caret-right"></i><span>Gift Cards</span></a></li>
+											<li><a href=""><i class="fas yolo fa-caret-right"></i><span>Size Guide</span></a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="list-blocks__store">
+									<div class="store-blocks">
+										<h3>STORE INFORMATION</h3>
+										<div class="store-blocks__location"><i class="fas yolo fa-map-marker-alt"></i><span>address: Lorem ipsum dolor sit amet<br>Onsectetuer adipiscing elit.</span></div>
+										<div class="store-blocks__email"><i class="fas yolo fa-envelope"></i><span>email:<a href="mailto:demo@posthemes.com"><span>demo@posthemes.com</span></span></a></div>
+										<div class="store-blocks__number"><i class="fas yolo fa-phone"></i><span>phone:<a href= "tel:0987654321"><span>0987.654.321</span></a></span></div>
+									</div>
+								</div>	
+							</div>
+
+						</div>
+							<div class="footer-bottom">
+								<span>© 2015 Psdfreebies. All Rights Reserved</span>
+							</div>
+					</footer>			
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script/script.js"></script>
+	<script src="slick/slick/slick.js"></script>
+	<script src="script/sas.js"></script>
+</body>
+</html>			
