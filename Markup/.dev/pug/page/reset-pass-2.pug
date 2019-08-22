@@ -1,0 +1,23 @@
+extends ../template/main-auth
+block title
+	| Markup
+block main
+	.container
+		.b-auth-block.b-auth-block--sm
+			.b-auth-block__inside
+				form(method="post" action="/").b-auth-block__item
+					.b-auth-block__body
+						.b-auth-block__desc
+							h1.b-auth-block__title Reset password
+							p.b-auth-block__text Use the form below to set a new password
+						.b-input
+							.b-input__text-field-wrap
+								.b-input__text-field-inside-wrap
+									input(type="password" required).b-input__text-field.js-required
+									span.b-input__placeholder New password
+							.b-input__text-field-wrap
+								.b-input__text-field-inside-wrap
+									input(type="password" required).b-input__text-field.js-required
+									span.b-input__placeholder Repeat new password
+
+					button.b-auth-block__button.js-send Change password

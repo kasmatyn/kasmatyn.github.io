@@ -1,0 +1,123 @@
+.c-page
+	display: flex
+	flex-direction: column
+	min-height: 100%
+	&--header-fixed
+		.c-header
+			position: fixed
+			top: 0
+			right: 0
+			left: 0
+			width: 100%
+	&--background-accent
+		position: relative
+		background-color: $color-accent-dark
+		color: #ffffff
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background: transparent url("../assets/img/section-bg/item-3.png") left top no-repeat
+			background-size: auto
+			z-index: 0
+.c-main
+	flex: 1 0 auto
+	&--middle
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 4rem 0 8rem
+		z-index: 1
+.c-header
+	position: relative
+	z-index: 10
+	padding: 1rem 0
+	+transition(all, .35s, ease)
+	&__burger
+		display: flex
+		align-items: center
+		padding-left: 1.5rem
+	&.in-scroll
+		color: $color-dark
+		background-color: rgba($color-accent, 0.9)
+		box-shadow: 0px 5px 30px rgba($color-accent, 0.1)
+		padding: 1rem 0
+
+.c-content
+	padding: 50px 0 50px
+
+
+.c-footer
+	position: relative
+	z-index: 1
+	flex: 0 0 auto
+	font-size: 1.2rem
+	&__body
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		padding-top: 2.8rem
+		border-top: 1px solid #ebe7f0
+		&--border-accent
+			border-color: #643cb1
+	&__address,
+	&__privacy
+		display: block
+		margin-bottom: 2.8rem
+	&__privacy
+		&--dark
+			color: rgba(255, 255, 255, 0.5)
+
+	&__social
+		margin-bottom: 2.5rem
+.c-sections
+	position: relative
+	background: transparent url("../assets/img/section-bg/item-2.png") center bottom no-repeat
+	background-size: cover
+.main-link
+	color: $color-accent
+	text-decoration: underline
+@media screen and (max-width: $max-lg)
+	.c-header
+		&__navigation
+			position: fixed
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			overflow-x: auto
+			background-color: rgba($color-dark, .8)
+			opacity: 0
+			visibility: hidden
+			z-index: 1
+			transform: scale(.5) translate(0, -100%)
+			+transition(all, .5s, linear)
+			display: flex
+			justify-content: center
+			align-items: center
+			&.active
+				opacity: 1
+				visibility: visible
+				transform: scale(1) translate(0, 0)
+
+
+
+@media screen and (min-width: $sm-l)
+	.c-footer
+		&__body
+			justify-content: space-between
+			align-items: flex-end
+			&--start
+				align-items: flex-start
+@media screen and (min-width: $lg)
+	.c-header
+		padding: 3rem 0
+		&__navigation
+			padding-right: 4.5rem
+		&__burger
+			display: none
+

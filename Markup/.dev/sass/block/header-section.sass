@@ -1,0 +1,29 @@
+.b-header-section
+	position: relative
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	min-height: 100vh
+	padding: 18vh 0 4rem
+	color: #ffffff
+	background: transparent center bottom no-repeat
+	background-size: cover
+	overflow: hidden
+	&__macbook
+		position: relative
+		margin-top: 5rem
+		padding-left: 1.5rem
+		padding-right: 1.5rem
+
+	&__blockquote
+		display: flex
+		justify-content: center
+		margin-top: 5rem
+
+	@media screen and (min-width: $lg)
+		&__macbook
+			max-width: 80.33333%
+			padding: 0
+			margin-top: 0
+			margin-right: -22%
+			+translate(5rem, 1rem)

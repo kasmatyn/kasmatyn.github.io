@@ -1,0 +1,30 @@
+.b-main-list
+	padding-left: 1rem
+	color: #293553
+	&__item
+		position: relative
+		padding-left: 1rem
+		margin-bottom: 2rem
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: .5rem
+			left: -1rem
+			width: 1rem
+			height: 1rem
+			background-color: #a16bde
+			+border-radius(50%)
+	&--sm
+		.b-main-list
+			&__item
+				font-size: 1.1rem
+				margin-bottom: 1rem
+				&:before
+					width: .5rem
+					height: .5rem
+	&--silver
+		.b-main-list
+			&__item
+				&:before
+					background-color: #cbd3da
