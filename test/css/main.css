@@ -19,7 +19,7 @@ body {
   overflow-x: hidden; }
 
 .bottombg {
-  background-image: url(../img/bg2.jpg);
+  background-image: url(/img/bg2.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -29,7 +29,7 @@ body {
   margin-bottom: 10px; }
 
 .topbg {
-  background-image: url(../img/bg1.jpg);
+  background-image: url(/img/bg1.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
@@ -82,7 +82,7 @@ body {
   min-width: 299px; }
 
 .Logos {
-  background-image: url(../img/bg1.jpg);
+  background-image: url(/img/bg1.jpg);
   position: absolute;
   top: -32px;
   background-color: #E0DFE0;
