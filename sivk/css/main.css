@@ -2715,7 +2715,7 @@ body {
       width: 600px; } }
   @media only screen and (max-width: 1600px) {
     .section-sculptures__slider-item {
-      width: 400px; } }
+      width: 400px !important } }
   @media only screen and (max-width: 768px) {
     .section-sculptures__slider-item {
       width: 300px; } }
