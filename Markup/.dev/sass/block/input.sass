@@ -1,0 +1,99 @@
+.b-input
+
+	&__row
+		display: flex
+		flex-wrap: wrap
+	&__col
+		flex: 0 0 100%
+		max-width: 100%
+	&__placeholder
+		position: absolute
+		top: 50%
+		left: 0
+		font-size: 1.6rem
+		color: rgba(#333333, .4)
+		z-index: 0
+		+translate(0, -50%)
+		+transition(all, .4s, ease)
+
+	&__text-field-wrap
+		margin-bottom: 2rem
+		&--mb-0
+			margin-bottom: 0 !important
+		&.error
+			.b-input__error-text
+				display: inline-block
+
+			.b-input__text-field
+				color: $color-declined
+				border-color: $color-declined
+				&::placeholder
+					color: $color-declined
+			.b-input__placeholder
+				color: $color-declined
+			.b-select__header
+				border-color: $color-declined
+			.b-select__header-val
+				color: $color-declined
+		&.error-pass
+			.b-input__error-pass
+				display: inline-block
+		&.successful
+			.b-input__text-field-inside-wrap
+				&:before
+					content: ''
+					position: absolute
+					top: 50%
+					right: 1rem
+					z-index: 5
+					width: 1.5rem
+					height: 1.5rem
+					background: #ffffff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAMAAAAmGUT3AAAAKlBMVEUAAACVYNqVYNmVYNmVYNqUYNmWYNmPYN+VYNmWYNmTYNeVYNmWYNqVYNlE6IvgAAAADnRSTlMAYOCAMKDQELBQQPCPn6ZZlXoAAAAoSURBVHgBY4ACRiYog5mJBcJgZWNnYODghDIYuLh5eIEMEGBn4wAzAAzCAJkkA2BDAAAAAElFTkSuQmCC) center no-repeat
+					+translate(0, -50%)
+			.b-input__text-field
+				color: $color-accent
+				border-color: $color-accent
+			.b-select__header
+				border-color: $color-accent
+			.b-select__header-val
+				color: $color-accent
+		&.is-full
+			.b-input__placeholder
+				top: 0
+				color: $color-font
+	&__text-field-inside-wrap
+		position: relative
+	&__error-text,
+	&__error-pass
+		display: none
+		font-size: 1.2rem
+		margin: .4em 0 0 .4rem
+		color: $color-declined
+
+	&__text-field
+		position: relative
+		display: block
+		width: 100%
+		border: none
+		background: transparent
+		border-bottom: 1px solid #c3c3c3
+		padding: 1.5rem 0
+		z-index: 1
+		&:focus
+			box-shadow: none
+			border-color: #293553
+			& ~ .b-input__placeholder
+				top: 0
+				color: $color-font
+	&__checkbox-center
+		display: flex
+		justify-content: center
+		margin-top: 1.8rem
+	@media screen and (min-width: $sm)
+		&__col
+			flex: 1
+			padding-right: 4.5rem
+			&:last-child
+				padding-right: 0
+		&__text-field-wrap
+			margin-bottom: 4rem

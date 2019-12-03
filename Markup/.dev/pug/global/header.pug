@@ -1,0 +1,32 @@
+header.c-header.js-sticky-header
+	.container
+		.row.align-items-center
+			.col
+				a(href="/").b-logo
+					img(src="assets/img/logo.png" alt="logo").b-logo__img
+			.col-auto
+				.row.align-items-center.no-gutters
+					.c-header__navigation.js-mobile-menu
+						nav.b-navigation
+							a(href="#what-it-altpush").b-navigation__item.is-active Что такое altpush
+							a(href="#we-offer").b-navigation__item Что мы предлагаем
+							a(href="#contacts").b-navigation__item Контакты
+					.c-header__auth
+						.b-authorization.d-none.d-lg-flex
+							.b-authorization__item
+								a(href="#").button-header-link Sign in
+							.b-authorization__item
+								a(href="#").button Sign Up
+
+						.b-main-dropdown.js-dropdown-block.d-lg-none
+							button.b-main-dropdown__button.js-dropdown-button
+								+icon('fa-user')
+							ul.b-main-dropdown__dropdown
+								li.b-main-dropdown__dropdown-item
+									a(href="#").b-main-dropdown__dropdown-link Sign in
+								li.b-main-dropdown__dropdown-item
+									a(href="#").b-main-dropdown__dropdown-link Sign Up
+
+					.c-header__burger
+						button.burger.js-burger-btn
+							.burger__icon

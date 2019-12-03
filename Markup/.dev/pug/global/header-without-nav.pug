@@ -1,0 +1,23 @@
+header.c-header
+	.container
+		.row.align-items-center
+			.col
+				a(href="/").b-logo
+					img(src="assets/img/logo.png" alt="logo").b-logo__img
+			.col-auto
+				.row.align-items-center.no-gutters
+					.c-header__auth
+						.b-authorization.d-none.d-lg-flex
+							.b-authorization__item
+								a(href="#").button-header-link Sign in
+							.b-authorization__item
+								a(href="#").button Sign Up
+
+						.b-main-dropdown.js-dropdown-block.d-lg-none
+							button.b-main-dropdown__button.js-dropdown-button
+								+icon('fa-user')
+							ul.b-main-dropdown__dropdown
+								li.b-main-dropdown__dropdown-item
+									a(href="#").b-main-dropdown__dropdown-link Sign in
+								li.b-main-dropdown__dropdown-item
+									a(href="#").b-main-dropdown__dropdown-link Sign Up

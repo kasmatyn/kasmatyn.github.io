@@ -1,0 +1,73 @@
+extends ../template/main-auth
+block title
+	| Markup
+block main
+	.container
+		.b-heading
+			h1.h1.b-heading__caption Sign up
+		.b-auth-block.js-type-user-block
+			.b-auth-block__inside
+				.b-auth-block__header
+					.b-auth-block__header-item.js-type-user-button.is-active(data-user-type="Advertiser") Advertiser
+					.b-auth-block__header-item.js-type-user-button(data-user-type="Publisher") Publisher
+				form(method="post" action="/").b-auth-block__item.js-toggle-panel.is-active
+					input(type="hidden" value="Advertiser").js-type-user-input
+					.b-auth-block__body
+						.b-input
+							.b-input__text-field-wrap
+								.b-input__text-field-inside-wrap
+									input(type="text").b-input__text-field.js-required
+									span.b-input__placeholder Name
+							.b-input__row
+								.b-input__col
+									.b-input__text-field-wrap
+										.b-input__text-field-inside-wrap
+											input(type="email").b-input__text-field.js-required
+											span.b-input__placeholder Contact email
+								.b-input__col
+									.b-input__text-field-wrap
+										.b-input__text-field-inside-wrap
+											input(type="email").b-input__text-field.js-required
+											span.b-input__placeholder Confirm email
+							.b-input__row
+								.b-input__col
+									.b-input__text-field-wrap
+										.b-input__text-field-inside-wrap
+											input(type="password").b-input__text-field.js-required
+											span.b-input__placeholder Password
+								.b-input__col
+									.b-input__text-field-wrap
+										.b-input__text-field-inside-wrap
+											input(type="password").b-input__text-field.js-required
+											span.b-input__placeholder Re-type password
+							.b-input__row
+								.b-input__col
+									.b-input__text-field-wrap
+										.b-input__text-field-inside-wrap
+											.b-select.js-select-block
+												.b-select__header.js-select-button
+													input(type="hidden" value="").b-select__hidden-input.js-select-set-val.js-required
+													.b-select__header-val.js-select-label Select messenger
+													+icon('fa-angle-down', 'b-select__header-icon')
+												.b-select__dropdown.js-select-dropdown
+													span(data-auth="messenger 1").b-select__item.js-select-auth-label messenger 1
+													span(data-auth="messenger 2").b-select__item.js-select-auth-label messenger 2
+													span(data-auth="messenger 3").b-select__item.js-select-auth-label messenger 3
+
+								.b-input__col
+									.b-input__text-field-wrap
+										.b-input__text-field-inside-wrap
+											input(type="password").b-input__text-field.js-required
+											span.b-input__placeholder Messenger identifier
+
+							.b-input__text-field-wrap
+								.b-captcha
+									#reCaptcha.b-captcha__frame
+								.b-input__checkbox-center
+									label.main-checkbox
+										input.main-checkbox__check(type='checkbox', style='display: none')
+										span.main-checkbox__item
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="main-checkbox__svg"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" class=""></path></svg>
+										span.main-checkbox__label-text I agree with <a href="terms-conditions.html" class="main-link"> Terms of Conditions</a>
+
+					button.b-auth-block__button.js-send Sign up
