@@ -1,0 +1,45 @@
+.corps-section
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	width: 10rem
+	height: 10rem
+	font-size: .9rem
+	font-weight: 700
+	color: $color-font
+
+	text-align: center
+	background-color: rgba(#ffffff, .9)
+	padding: 1rem
+	cursor: pointer
+	+radius(50%)
+
+	&__label
+		letter-spacing: .1em
+		text-transform: uppercase
+	&__number
+		font-size: 1.2rem
+		line-height: 1
+		margin-bottom: .1rem
+	&__realize
+		font-weight: 500
+	&__select-flat
+		font-weight: 500
+		color: $color-red
+	+min($lg)
+		font-size: 1.2rem
+		width: 15rem
+		height: 15rem
+		&__number
+			font-size: 1.6rem
+	+min($xl)
+		font-size: 1.4rem
+		width: 18rem
+		height: 18rem
+		&__number
+			font-size: 2.2rem
+		&__realize,
+		&__select-flat
+			font-size: 1.2rem

@@ -1,0 +1,56 @@
+.b-range-input
+	margin-bottom: 2.3rem
+
+	&__label
+		color: $color-font
+		margin-bottom: .9rem
+
+	&__value
+		position: relative
+		display: block
+		width: 100%
+		border: none
+		background: $color-light
+		padding: 2rem 1rem 2rem 2rem
+		z-index: 1
+		font-size: 1.8rem
+		font-weight: bold
+
+	&__slider
+		height: .3rem
+		border: none
+		box-shadow: none
+		background: #d8dde6
+		.noUi-connect
+			background: $color-accent
+
+		.noUi-handle
+			width: 2.2rem
+			height: 2.2rem
+			background: $color-accent
+			box-shadow: 0 10px 20px rgba(28, 46, 68, 0.1)
+			border: .4rem solid #ffffff
+			top: 0
+			right: -1.1rem
+			+radius(50%)
+			+translate(0, -50%)
+			&:before
+				display: none
+			&:after
+				display: none
+	&__text-field-wrap
+		position: relative
+
+	&__right-content
+		z-index: 2
+		position: absolute
+		top: 50%
+		right: 1.2rem
+		font-weight: 500
+		color: $color-accent
+		+translate(0, -50%)
+
+	+min($lg)
+		margin-bottom: 3rem
+		&__value
+			font-size: 2rem

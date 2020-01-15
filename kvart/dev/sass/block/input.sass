@@ -1,0 +1,50 @@
+.b-input
+
+	&__label
+		color: $color-font
+		margin-bottom: 1.1rem
+	&__text-field-wrap
+		margin-bottom: 2rem
+		&--mb-0
+			margin-bottom: 0 !important
+		&.error
+			.b-input__error-text
+				display: inline-block
+
+			.b-input__text-field
+				color: $color-red
+				border-color: $color-red
+				&::placeholder
+					color: $color-red
+			.b-input__label
+				color: $color-red
+
+		&.successful
+			.b-input__text-field
+				color: $color-accent
+				border-color: $color-accent
+
+	&__text-field-inside-wrap
+		position: relative
+
+	&__text-field
+		position: relative
+		display: block
+		width: 100%
+		border: none
+		background: $color-light
+		padding: 2.3rem 2rem
+		z-index: 1
+		font-size: 1.8rem
+		font-weight: 700
+		&:focus
+			box-shadow: none
+			border-color: #293553
+			& ~ .b-input__placeholder
+				top: 0
+				color: $color-font
+
+	@media screen and (min-width: $sm)
+
+		&__text-field-wrap
+			margin-bottom: 4rem

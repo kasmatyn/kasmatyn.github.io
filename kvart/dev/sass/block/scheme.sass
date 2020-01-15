@@ -1,0 +1,158 @@
+.b-scheme
+	padding-top: 10.5rem
+	&__body
+		position: relative
+		overflow: hidden
+	&__change
+		position: absolute
+		top: 0
+		right: 0
+	&__item
+		min-height: 30rem
+		background: transparent center left no-repeat
+		background-size: cover
+		&--st-1
+			background-position: -104px 0
+	&__corps
+		position: absolute
+		&--13
+			top: 24%
+			left: -11px
+		&--14
+			top: 44%
+			left: 23rem
+		&--section-2-4
+			left: 15rem
+			top: 23%
+		&--section-5-8
+			left: 17rem
+			top: 59%
+	&__corps-details
+		z-index: 10
+		position: fixed
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: .5rem
+		opacity: 0
+		visibility: hidden
+		background-color: rgba($color-accent, .7)
+		+transition(all, .35s, ease)
+	&__corps
+		&.is-active
+			.b-scheme__corps-details
+				opacity: 1
+				visibility: visible
+
+
+	+min($sm)
+		&__item
+			min-height: 38rem
+			&--st-1
+				background-position: center left
+		&__corps
+			&--13
+				top: 30%
+				left: 11rem
+			&--14
+				top: 50%
+				left: 47rem
+			&--section-2-4
+				top: 30%
+				left: 34rem
+			&--section-5-8
+				top: 62.5%
+				left: 36rem
+	+min($sm1)
+		&__item
+			min-height: 50rem
+		&__corps
+			&--13
+				top: 32%
+				left: 15rem
+			&--14
+				top: 51%
+				left: 62rem
+			&--section-2-4
+				top: 34%
+				left: 46rem
+			&--section-5-8
+				top: 64.5%
+				left: 49rem
+	+min($md)
+		&__body
+			overflow: visible
+		&__corps-details
+			position: absolute
+			padding: 0
+			right: auto
+			top: auto
+			left: 50%
+			bottom: calc(100% + 2.2rem)
+			background: transparent
+			+translate(-50%, 0)
+	+min($lg)
+
+		&__item
+			min-height: 60rem
+		&__change
+			top: 2rem
+			right: 2rem
+
+		&__corps
+			&--13
+				top: 31%
+				left: 17rem
+			&--14
+				top: 46%
+				left: 73rem
+			&--section-2-4
+				top: 32.5%
+				left: 54rem
+			&--section-5-8
+				top: 62.5%
+				left: 58rem
+	+min($xl)
+		&__item
+			min-height: 80.5rem
+		&__corps
+			&--13
+				left: 24rem
+			&--14
+				top: 48%
+				left: 97rem
+			&--section-2-4
+				left: 74.6rem
+			&--section-5-8
+				top: 64.5%
+				left: 78.6rem
+
+	+min(1921px)
+		&__corps
+			&--13
+				left: 12%
+			&--14
+				left: 51%
+			&--section-2-4
+				left: 38%
+			&--section-5-8
+				left: 41%
+
+	+min(2100px)
+		&__corps
+			&--13
+				left: 13.5%
+				top: 27%
+			&--14
+				left: 52%
+				top: 52%
+			&--section-2-4
+				left: 39.3%
+				top: 30%
+			&--section-5-8
+				left: 42%
+				top: 71%

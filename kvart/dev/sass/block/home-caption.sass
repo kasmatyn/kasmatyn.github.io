@@ -1,0 +1,33 @@
+.b-home-caption
+	display: flex
+	align-items: center
+	justify-content: center
+	max-width: 27rem
+	min-height: 27rem
+	margin: 0 auto
+	background: transparent url('../assets/img/utils/29.png') center no-repeat
+	background-size: contain
+	&__title
+		font-size: 4rem
+		line-height: 1
+		color: #ffffff
+		text-transform: uppercase
+		font-weight: 500
+		margin: 0
+
+	+min($sm)
+		max-width: 45.2rem
+		min-height: 29rem
+		&__title
+			font-size: 6.4rem
+		&--md
+			max-width: 37.2rem
+	+min($lg)
+		min-height: 51.8rem
+		max-width: 80rem
+		&--md
+			max-width: 64rem
+		&__title
+			font-size: 10.8rem
+			margin: 4rem 0 0
+			font-weight: bold

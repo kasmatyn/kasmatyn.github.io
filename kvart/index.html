@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#ffcc00"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link href="css/styles.min.css" type="text/css" rel="stylesheet"/><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js" data-skip-moving="true"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" data-skip-moving="true"></script><![endif]-->
+    <title>Markup
+    </title>
+  </head>
+  <body>
+    <div class="c-page">
+      <header class="c-header c-header--sticky">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="c-header__logo"><a class="b-logo" href="/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5 18 300 250" width="70" height="61"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="12.307" y1="142.732" x2="299.713" y2="142.732"><stop offset="0" stop-color="#cd5c2e"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M290.2 26.5V259H21.8V26.5h268.4m9.5-9.5H12.3v251.5h287.4V17z" fill="url(#a)"/><defs><path id="b" d="M86.7 203.4h60.7v32.7H43.9v-19.8c8.6-9.4 18.4-19.5 29.5-30.2 24.8-23.7 36.3-41.9 36.3-54.5 0-16.8-6.6-25.2-19.9-25.2-13.4 0-21.2 6.9-23.5 20.8 0 1 .2 2.2 1.3 2.7 4.6.3 8.4 1.6 11.4 3.8 3.8 2.9 5.9 7.1 6.1 12.5.3 5.3-1.1 9.6-4.2 12.9-3 3.4-7.2 5.2-12.5 5.4-6.5.3-11.9-1.7-16.1-5.9-4.1-4.1-6-9.6-7-16.5-.4-3.1-.4-3.9-.4-5.7 0-28.4 17.6-42.6 52.7-42.6 14.9 0 27.1 3.7 36.7 11 9.6 7.3 14.4 16.7 14.4 28.1 0 13.1-9.5 27.3-28.4 42.7l-12.7 10.3-14.1 11.8c-1.1.8-3.3 3.3-6.8 5.7zm182.7-39.5c0 22.8-5.7 40.7-17.1 53.8-11.4 13.1-27.1 19.6-46.9 19.6-26.6 0-39.9-9-39.9-28.9 0-1.3.1-3 .2-5.1h21.6c-.1 1.6-.2 3.1-.2 4.5 0 12.9 2.4 18.3 14.6 18.3 8.4 0 14.3-3.3 17.6-9.8 3.3-6.5 5.8-19.8 7.4-39.8-8.6 7.8-17.3 11.7-26.3 11.7-12.3 0-22.4-4.3-30.3-12.9-7.9-8.6-11.8-19.6-11.8-33 0-15 4.7-27.1 14.2-36.2 9.5-9.1 22-13.7 37.5-13.7 39.6.1 59.4 23.9 59.4 71.5zM228 140c0-24.2-5-36.3-14.9-36.3-10 0-15 12.9-15 38.7 0 21 4.4 31.5 13.1 31.5 11.3 0 16.8-11.3 16.8-33.9z"/></defs><clipPath id="c"><use xlink:href="#b" overflow="visible"/></clipPath><g clip-path="url(#c)"><path d="M14.9 261.8V20h279.3v241.8H14.9z" fill="#fff"/></g><linearGradient id="d" gradientUnits="userSpaceOnUse" x1="222.975" y1="280.341" x2="222.975" y2="204.458"><stop offset="0" stop-color="#ca4d28"/><stop offset="1" stop-color="#c94826"/></linearGradient><path clip-path="url(#c)" fill="url(#d)" d="M242.4 203.4v77.8l-38.9-38.9z"/><linearGradient id="e" gradientUnits="userSpaceOnUse" x1="222.972" y1="202.513" x2="222.972" y2="127.384"><stop offset="0" stop-color="#d06429"/><stop offset="1" stop-color="#cb5227"/></linearGradient><path clip-path="url(#c)" fill="url(#e)" d="M242.4 125.6v77.8l-38.9-38.9z"/><linearGradient id="f" gradientUnits="userSpaceOnUse" x1="222.975" y1="124.262" x2="222.975" y2="85.353"><stop offset="0" stop-color="#c73b27"/><stop offset="1" stop-color="#c63627"/></linearGradient><path clip-path="url(#c)" fill="url(#f)" d="M242.4 47.8v77.8l-38.9-38.9z"/><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="203.517" y1="162.357" x2="203.517" y2="125.969"><stop offset="0" stop-color="#c84027"/><stop offset="1" stop-color="#c73b27"/></linearGradient><path clip-path="url(#c)" fill="url(#g)" d="M242.4 125.6l-38.9 38.9-38.9-38.9z"/><linearGradient id="h" gradientUnits="userSpaceOnUse" x1="203.517" y1="204.962" x2="203.517" y2="240.876"><stop offset="0" stop-color="#d06629"/><stop offset="1" stop-color="#d2702a"/></linearGradient><path clip-path="url(#c)" fill="url(#h)" d="M242.4 203.4l-38.9 38.9-38.9-38.9z"/><linearGradient id="i" gradientUnits="userSpaceOnUse" x1="203.517" y1="126.862" x2="203.517" y2="84.988"><stop offset="0" stop-color="#cb4f27"/><stop offset="1" stop-color="#c94826"/></linearGradient><path clip-path="url(#c)" fill="url(#i)" d="M242.4 125.6h-77.8l38.9-38.9z"/><linearGradient id="j" gradientUnits="userSpaceOnUse" x1="203.517" y1="202.962" x2="203.517" y2="163.563"><stop offset="0" stop-color="#da892c"/><stop offset="1" stop-color="#d67d2d"/></linearGradient><path clip-path="url(#c)" fill="url(#j)" d="M242.4 203.4h-77.8l38.9-38.9z"/><linearGradient id="k" gradientUnits="userSpaceOnUse" x1="145.149" y1="105.981" x2="184.205" y2="67.213"><stop offset="0" stop-color="#d1692b"/><stop offset="1" stop-color="#ce6028"/></linearGradient><path clip-path="url(#c)" fill="url(#k)" d="M203.5 86.7l-38.9 38.9V47.8z"/><linearGradient id="l" gradientUnits="userSpaceOnUse" x1="184.063" y1="282.03" x2="184.063" y2="204.836"><stop offset="0" stop-color="#de982d"/><stop offset="1" stop-color="#da8b2f"/></linearGradient><path clip-path="url(#c)" fill="url(#l)" d="M203.5 242.3l-38.9 38.9v-77.8z"/><path clip-path="url(#c)" fill="#c31b1f" d="M203.5 164.5l-38.9 38.9v-77.8z"/><path clip-path="url(#c)" fill="#ca4d28" d="M164.6 203.4v77.8l-38.9-38.9z"/><linearGradient id="m" gradientUnits="userSpaceOnUse" x1="144.446" y1="183.942" x2="191.922" y2="138.146"><stop offset="0" stop-color="#cb5227"/><stop offset="1" stop-color="#cd5928"/></linearGradient><path clip-path="url(#c)" fill="url(#m)" d="M164.6 203.4l-38.9-38.9 38.9-38.9z"/><path clip-path="url(#c)" fill="#c73b27" d="M164.6 47.8v77.8l-38.9-38.9z"/><linearGradient id="n" gradientUnits="userSpaceOnUse" x1="106.752" y1="144.603" x2="129.813" y2="125.546"><stop offset="0" stop-color="#d5782d"/><stop offset="1" stop-color="#d26d2c"/></linearGradient><path clip-path="url(#c)" fill="url(#n)" d="M164.6 125.6l-38.9 38.9-38.9-38.9z"/><path clip-path="url(#c)" fill="#c84227" d="M125.7 164.5l38.9 38.9H86.8z"/><linearGradient id="o" gradientUnits="userSpaceOnUse" x1="125.689" y1="243.459" x2="125.689" y2="203.462"><stop offset="0" stop-color="#de9830"/><stop offset="1" stop-color="#da892c"/></linearGradient><path clip-path="url(#c)" fill="url(#o)" d="M164.6 203.4l-38.9 38.9-38.9-38.9z"/><path clip-path="url(#c)" fill="#c21b1d" d="M164.6 125.6H86.8l38.9-38.9z"/><linearGradient id="p" gradientUnits="userSpaceOnUse" x1="86.773" y1="86.668" x2="125.689" y2="86.668"><stop offset="0" stop-color="#c94826"/><stop offset="1" stop-color="#ca4a26"/></linearGradient><path clip-path="url(#c)" fill="url(#p)" d="M125.7 86.7l-38.9 38.9V47.8z"/><linearGradient id="q" gradientUnits="userSpaceOnUse" x1="88.923" y1="166.253" x2="106.054" y2="145.256"><stop offset="0" stop-color="#ce6028"/><stop offset="1" stop-color="#cd5928"/></linearGradient><path clip-path="url(#c)" fill="url(#q)" d="M125.7 164.5l-38.9 38.9v-77.8z"/><linearGradient id="r" gradientUnits="userSpaceOnUse" x1="106.231" y1="281.237" x2="106.231" y2="203.698"><stop offset="0" stop-color="#d2702a"/><stop offset="1" stop-color="#d06629"/></linearGradient><path clip-path="url(#c)" fill="url(#r)" d="M125.7 242.3l-38.9 38.9v-77.8z"/><linearGradient id="s" gradientUnits="userSpaceOnUse" x1="67.319" y1="280.341" x2="67.319" y2="205.52"><stop offset="0" stop-color="#de9830"/><stop offset="1" stop-color="#da8930"/></linearGradient><path clip-path="url(#c)" fill="url(#s)" d="M86.8 203.4v77.8l-38.9-38.9z"/><path clip-path="url(#c)" fill="#da892c" d="M86.8 203.4H8.9l39-38.9z"/><linearGradient id="t" gradientUnits="userSpaceOnUse" x1="68.91" y1="181.354" x2="94.057" y2="157.623"><stop offset="0" stop-color="#c84027"/><stop offset="1" stop-color="#c73d26"/></linearGradient><path clip-path="url(#c)" fill="url(#t)" d="M86.8 125.6v77.8l-38.9-38.9z"/><linearGradient id="u" gradientUnits="userSpaceOnUse" x1="15.44" y1="152.126" x2="83.73" y2="114.799"><stop offset="0" stop-color="#cc5627"/><stop offset="1" stop-color="#cb5227"/></linearGradient><path clip-path="url(#c)" fill="url(#u)" d="M86.8 125.6l-38.9 38.9-39-38.9z"/><linearGradient id="v" gradientUnits="userSpaceOnUse" x1="50.082" y1="86.668" x2="88.991" y2="86.668"><stop offset="0" stop-color="#c73927"/><stop offset="1" stop-color="#c63627"/></linearGradient><path clip-path="url(#c)" fill="url(#v)" d="M86.8 47.8v77.8L47.9 86.7z"/><linearGradient id="w" gradientUnits="userSpaceOnUse" x1="26.635" y1="224.46" x2="62.138" y2="192.593"><stop offset="0" stop-color="#d26d2a"/><stop offset="1" stop-color="#d06629"/></linearGradient><path clip-path="url(#c)" fill="url(#w)" d="M86.8 203.4l-38.9 38.9-39-38.9z"/><linearGradient id="x" gradientUnits="userSpaceOnUse" x1="46.127" y1="127.496" x2="67.156" y2="104.273"><stop offset="0" stop-color="#d1692b"/><stop offset="1" stop-color="#d06429"/></linearGradient><path clip-path="url(#c)" fill="url(#x)" d="M86.8 125.6H8.9l39-38.9z"/><linearGradient id="y" gradientUnits="userSpaceOnUse" x1="261.888" y1="120.46" x2="261.888" y2="81.545"><stop offset="0" stop-color="#cb4f28"/><stop offset="1" stop-color="#ca4a26"/></linearGradient><path clip-path="url(#c)" fill="url(#y)" d="M242.4 47.8l38.9 38.9-38.9 38.9z"/><path clip-path="url(#c)" fill="#d1692b" d="M281.3 86.7l39 38.9h-77.9z"/><linearGradient id="z" gradientUnits="userSpaceOnUse" x1="281.343" y1="160.245" x2="281.343" y2="125.54"><stop offset="0" stop-color="#c84027"/><stop offset="1" stop-color="#c73b27"/></linearGradient><path clip-path="url(#c)" fill="url(#z)" d="M242.4 125.6h77.9l-39 38.9z"/><linearGradient id="A" gradientUnits="userSpaceOnUse" x1="261.888" y1="205.047" x2="261.888" y2="127.216"><stop offset=".003" stop-color="#d9872c"/><stop offset="1" stop-color="#d26d2c"/></linearGradient><path clip-path="url(#c)" fill="url(#A)" d="M242.4 125.6l38.9 38.9-38.9 38.9z"/><linearGradient id="B" gradientUnits="userSpaceOnUse" x1="281.343" y1="201.273" x2="281.343" y2="163.056"><stop offset="0" stop-color="#d06429"/><stop offset="1" stop-color="#ce6028"/></linearGradient><path clip-path="url(#c)" fill="url(#B)" d="M281.3 164.5l39 38.9h-77.9z"/><linearGradient id="C" gradientUnits="userSpaceOnUse" x1="281.343" y1="224.979" x2="281.343" y2="204.094"><stop offset=".003" stop-color="#ca4a26"/><stop offset="1" stop-color="#c94826"/></linearGradient><path clip-path="url(#c)" fill="url(#C)" d="M242.4 203.4h77.9l-39 38.9z"/><path clip-path="url(#c)" fill="#c22020" d="M242.4 203.4l38.9 38.9-38.9 38.9z"/><g><linearGradient id="D" gradientUnits="userSpaceOnUse" x1="59.324" y1="83.538" x2="59.324" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M64 49.3h9.2l-13.3 15 14 17.7h-9.6L52.5 66h-.1v16h-7.8V49.3h7.8V63h.1L64 49.3z" fill="url(#D)"/><linearGradient id="E" gradientUnits="userSpaceOnUse" x1="91.915" y1="83.538" x2="91.915" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M94.3 49.3c8.7 0 10.2 4.8 10.2 8.3 0 3.8-2.3 5.8-5.5 6.8 2.6.5 7.1 2.3 7.1 8.4 0 7.9-6.8 9.2-12.7 9.2H77.7V49.3h16.6zm-8.8 12.9h7.2c3.1 0 3.9-2.1 3.9-3.4 0-1.4-.8-3.2-4.2-3.2h-6.9v6.6zm0 13.5h8.1c1.4 0 4.3-.7 4.3-3.7 0-3.1-2.5-3.7-5.3-3.7h-7.1v7.4z" fill="url(#E)"/><linearGradient id="F" gradientUnits="userSpaceOnUse" x1="124.357" y1="83.538" x2="124.357" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M128.3 49.3L140.8 82h-8.3l-2.1-6.1h-12l-2.1 6.1H108l12.4-32.7h7.9zm.3 21.1l-4.3-12.5-4.3 12.5h8.6z" fill="url(#F)"/><linearGradient id="G" gradientUnits="userSpaceOnUse" x1="159.44" y1="83.538" x2="159.44" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M160.9 49.3c6.7 0 12.5 2.5 12.5 10.6 0 10.2-8.7 10.9-12.7 10.9h-7.4V82h-7.8V49.3h15.4zm-8.2 15.1h6.1c3.7 0 5.6-1.3 5.6-4.5 0-4.4-3.8-4.3-5.6-4.3h-6.1v8.8z" fill="url(#G)"/><linearGradient id="H" gradientUnits="userSpaceOnUse" x1="189.35" y1="83.538" x2="189.35" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M175.4 55.7v-6.4h27.9v6.4h-10V82h-7.8V55.7h-10.1z" fill="url(#H)"/><linearGradient id="I" gradientUnits="userSpaceOnUse" x1="217.479" y1="83.538" x2="217.479" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M221.4 49.3L233.9 82h-8.3l-2.1-6.1h-12l-2.1 6.1h-8.2l12.4-32.7h7.8zm.3 21.1l-4.3-12.5-4.4 12.5h8.7z" fill="url(#I)"/><linearGradient id="J" gradientUnits="userSpaceOnUse" x1="251.069" y1="83.423" x2="251.069" y2="40.413"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M242.7 49.2l-.2 15.6c-.1 5.5-.4 11.6-7.7 10.7l2.4 6.6c11.6.4 12.5-9.3 12.6-15.2l.2-11.4h9.3v26.3h7.8V49.2h-24.4z" fill="url(#J)"/></g></svg></a></div>
+            <div class="c-header__burger">
+              <button class="burger js-burger-btn">
+                <div class="burger__icon"></div>
+              </button>
+            </div>
+            <div class="col d-none d-lg-block">
+              <nav class="b-navigation"><a class="b-navigation__item" href="#">О проекте</a><a class="b-navigation__item" href="#">Ипотека</a><a class="b-navigation__item" href="#">Акции</a><a class="b-navigation__item" href="#">Ход строительства</a><a class="b-navigation__item" href="#">Контакты</a></nav>
+            </div>
+            <div class="col-auto d-none d-sm-block">
+              <div class="b-feedback-h"><a class="b-feedback-h__number" href="tel:+7(495)2292827">
+                  <svg class="icon icon-fa-phone b-feedback-h__number-icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-phone"></use>
+                  </svg>+7 (495) 229-28-27</a><a class="b-feedback-h__button" href="#">оставить заявку</a></div>
+            </div>
+          </div>
+          <div class="c-header__category d-none d-lg-block">
+            <ul class="b-header-category">
+              <li class="b-header-category__item"><a href="#">Квартиры</a></li>
+              <li class="b-header-category__item"><a href="#">Машиноместа</a></li>
+              <li class="b-header-category__item"><a href="#">Коммерческие помещения</a></li>
+              <li class="b-header-category__item"><a href="#">Кладовые</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="c-main">
+        <main>
+          <section class="b-home-section" style="background-image: url(assets/img/section/item-1.jpg)">
+            <div class="container">
+              <div class="b-home-section__center">
+                <div class="b-home-caption">
+                  <h1 class="b-home-caption__title">Квартал</h1>
+                </div>
+              </div>
+              <div class="b-home-section__footer">
+                <div class="b-actions-list js-actions-slider">
+                  <div class="b-actions-list__item"><a class="b-action" href="#">
+                      <div class="b-action__icon"><span class="actions-sprite mansion"></span></div><span class="b-action__title">Генплан</span></a></div>
+                  <div class="b-actions-list__item"><a class="b-action" href="#">
+                      <div class="b-action__icon"><span class="actions-sprite key"></span></div><span class="b-action__title">Выбор квартиры</span></a></div>
+                  <div class="b-actions-list__item"><a class="b-action" href="#">
+                      <div class="b-action__icon"><span class="actions-sprite camera"></span></div><span class="b-action__title">Онлайн камера</span></a></div>
+                  <div class="b-actions-list__item"><a class="b-action" href="#">
+                      <div class="b-action__icon"><span class="actions-sprite bee"></span></div><span class="b-action__title">Текущая акция</span></a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="b-benefits" style="background-image: url(assets/img/section/item-2.png)">
+            <div class="b-vertical-title">
+              <div class="b-vertical-title__border"></div><span class="b-vertical-title__title">актуальные акции</span>
+            </div>
+            <div class="container">
+              <!--MOBILE CAROUSEL-->
+              <div class="d-md-none js-benefits-mobile o-slick">
+                <div class="o-slick__item"><a class="b-benefit b-benefit--style-2" href="#" style="background-image: url(assets/img/benefit/item-1.jpg)">
+                    <div class="b-benefit__content"><span class="b-benefit__label">1 мая 2019</span><span class="b-benefit__caption">Замайчивые цены</span><span class="b-benefit__desc">в честь майских праздников</span></div></a></div>
+                <div class="o-slick__item"><a class="b-benefit b-benefit--style-3" href="#" style="background-image: url(assets/img/benefit/item-2.jpg)">
+                    <div class="b-benefit__content b-benefit__content--right"><span class="b-benefit__label b-benefit__label--red">Спецпредложение</span><span class="b-benefit__caption">Бесплатный паркинг</span><span class="b-benefit__desc">в подарок при покупке квартиры до 28.05</span></div></a></div>
+                <div class="o-slick__item"><a class="b-benefit b-benefit--style-1" href="#" style="background-image: url(assets/img/benefit/item-3.jpg)">
+                    <div class="b-benefit__content"><span class="b-benefit__label b-benefit__label--red">Спецпредложение</span><span class="b-benefit__caption">Коммерческая недвижимость</span><span class="b-benefit__desc">по самым выгодным ценам</span></div></a></div>
+                <div class="o-slick__item"><a class="b-benefit b-benefit--style-2" href="#" style="background-image: url(assets/img/benefit/item-1.jpg)">
+                    <div class="b-benefit__content"><span class="b-benefit__label">1 мая 2019</span><span class="b-benefit__caption">Замайчивые цены</span><span class="b-benefit__desc">в честь майских праздников</span></div></a></div>
+                <div class="o-slick__item"><a class="b-benefit b-benefit--style-3" href="#" style="background-image: url(assets/img/benefit/item-2.jpg)">
+                    <div class="b-benefit__content b-benefit__content--right"><span class="b-benefit__label b-benefit__label--red">Спецпредложение</span><span class="b-benefit__caption">Бесплатный паркинг</span><span class="b-benefit__desc">в подарок при покупке квартиры до 28.05</span></div></a></div>
+                <div class="o-slick__item"><a class="b-benefit b-benefit--style-1" href="#" style="background-image: url(assets/img/benefit/item-3.jpg)">
+                    <div class="b-benefit__content"><span class="b-benefit__label b-benefit__label--red">Спецпредложение</span><span class="b-benefit__caption">Коммерческая недвижимость</span><span class="b-benefit__desc">по самым выгодным ценам</span></div></a></div>
+              </div>
+              <!--DESKTOP CAROUSEL-->
+              <div class="d-none d-md-block o-slick o-slick--gutter benefits-desktop-slider">
+                <div class="o-slick__arrow o-slick__arrow--prev">
+                  <svg class="icon icon-arrow-left ">
+                    <use xlink:href="assets/img/sprite/sprite.svg#arrow-left"></use>
+                  </svg>
+                </div>
+                <div class="o-slick__arrow o-slick__arrow--next">
+                  <svg class="icon icon-arrow-right ">
+                    <use xlink:href="assets/img/sprite/sprite.svg#arrow-right"></use>
+                  </svg>
+                </div>
+                <div class="js-benefits-desktop">
+                  <div class="o-slick__item">
+                    <div class="row b-benefits__row">
+                      <div class="col-md-5 b-benefits__col">
+                        <div class="b-benefits__item"><a class="b-benefit b-benefit--style-2" href="#" style="background-image: url(assets/img/benefit/item-1.jpg)">
+                            <div class="b-benefit__content"><span class="b-benefit__label">1 мая 2019</span><span class="b-benefit__caption">Замайчивые цены</span><span class="b-benefit__desc">в честь майских праздников</span></div></a></div>
+                      </div>
+                      <div class="col-md-7 b-benefits__col">
+                        <div class="b-benefits__item--in-column"><a class="b-benefit b-benefit--style-3" href="#" style="background-image: url(assets/img/benefit/item-2.jpg)">
+                            <div class="b-benefit__content b-benefit__content--right"><span class="b-benefit__label b-benefit__label--red">Спецпредложение</span><span class="b-benefit__caption">Бесплатный паркинг</span><span class="b-benefit__desc">в подарок при покупке квартиры до 28.05</span></div></a></div>
+                        <div class="b-benefits__item--in-column"><a class="b-benefit b-benefit--style-1" href="#" style="background-image: url(assets/img/benefit/item-3.jpg)">
+                            <div class="b-benefit__content"><span class="b-benefit__label b-benefit__label--red">Спецпредложение</span><span class="b-benefit__caption">Коммерческая недвижимость</span><span class="b-benefit__desc">по самым выгодным ценам</span></div></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="o-slick__item">
+                    <div class="row b-benefits__row">
+                      <div class="col-md-5 b-benefits__col">
+                        <div class="b-benefits__item"><a class="b-benefit b-benefit--style-2" href="#" style="background-image: url(assets/img/benefit/item-1.jpg)">
+                            <div class="b-benefit__content"><span class="b-benefit__label">1 мая 2019</span><span class="b-benefit__caption">Замайчивые цены</span><span class="b-benefit__desc">в честь майских праздников</span></div></a></div>
+                      </div>
+                      <div class="col-md-7 b-benefits__col">
+                        <div class="b-benefits__item--in-column"><a class="b-benefit b-benefit--style-3" href="#" style="background-image: url(assets/img/benefit/item-2.jpg)">
+                            <div class="b-benefit__content b-benefit__content--right"><span class="b-benefit__label b-benefit__label--red">Спецпредложение</span><span class="b-benefit__caption">Бесплатный паркинг</span><span class="b-benefit__desc">в подарок при покупке квартиры до 28.05</span></div></a></div>
+                        <div class="b-benefits__item--in-column"><a class="b-benefit b-benefit--style-1" href="#" style="background-image: url(assets/img/benefit/item-3.jpg)">
+                            <div class="b-benefit__content"><span class="b-benefit__label b-benefit__label--red">Спецпредложение</span><span class="b-benefit__caption">Коммерческая недвижимость</span><span class="b-benefit__desc">по самым выгодным ценам</span></div></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="b-special-offers" style="background-image: url(assets/img/section/item-3.jpg)">
+            <h1 class="h1 b-heading">Специальные предложения</h1>
+            <div class="container">
+              <div class="b-flats">
+                <div class="o-slick js-flats-carousel">
+                  <div class="b-flats__item"><a class="b-flat" href="#">
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <div class="b-flat__picture"><img src="assets/img/flat/item-2.png" alt="alt"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="b-flat__desc"><span class="b-flat__placing">Корпус 14, Секция 3</span>
+                            <h2 class="b-flat__title">2-комнатная квартира, 60.59 м2</h2>
+                            <ul class="b-flat-list">
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">60.59</span><span class="b-flat-list__label">м2, общая площадь</span></li>
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">404</span><span class="b-flat-list__label">номер квартиры</span></li>
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">4</span><span class="b-flat-list__label">номер этажа</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="b-flat__price"><span class="b-flat__old-price">5 533 660 ₽</span><span class="b-flat__actual-price">4 533 660 ₽</span><span class="b-flat__m2-price">или 74 322 за м2</span>
+                            <div class="b-flat__label"><span class="tag">БЕЗ ОТДЕЛКИ</span></div>
+                          </div>
+                        </div>
+                      </div></a></div>
+                  <div class="b-flats__item"><a class="b-flat" href="#">
+                      <div class="row">
+                        <div class="col-lg-2 col-xl-3">
+                          <div class="b-flat__picture"><img src="assets/img/flat/item-1.png" alt="alt"/></div>
+                        </div>
+                        <div class="col-lg-7 col-xl-6">
+                          <div class="b-flat__desc"><span class="b-flat__placing">Корпус 14, Секция 3</span>
+                            <h2 class="b-flat__title">1-комнатная квартира, 43.39 м2</h2>
+                            <ul class="b-flat-list">
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">43.39</span><span class="b-flat-list__label">м2, общая площадь</span></li>
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">355</span><span class="b-flat-list__label">номер квартиры</span></li>
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">3</span><span class="b-flat-list__label">номер этажа</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="b-flat__price"><span class="b-flat__old-price">4 533 660 ₽</span><span class="b-flat__actual-price">3 335 225 ₽</span><span class="b-flat__m2-price">или 79 410 за м2</span>
+                            <div class="b-flat__label"><span class="tag tag--green">
+                                <svg class="icon icon-fa-check tag__icon">
+                                  <use xlink:href="assets/img/sprite/sprite.svg#fa-check"></use>
+                                </svg>Отделка</span><span class="tag tag--red">
+                                <svg class="icon icon-tag tag__icon">
+                                  <use xlink:href="assets/img/sprite/sprite.svg#tag"></use>
+                                </svg>спеццена</span></div>
+                          </div>
+                        </div>
+                      </div></a></div>
+                  <div class="b-flats__item"><a class="b-flat" href="#">
+                      <div class="row">
+                        <div class="col-lg-2 col-xl-3">
+                          <div class="b-flat__picture"><img src="assets/img/flat/item-3.png" alt="alt"/></div>
+                        </div>
+                        <div class="col-lg-7 col-xl-6">
+                          <div class="b-flat__desc"><span class="b-flat__placing">Корпус 14, Секция 2</span>
+                            <h2 class="b-flat__title">3-комнатная квартира, 79.01 м2</h2>
+                            <ul class="b-flat-list">
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">79.01</span><span class="b-flat-list__label">м2, общая площадь</span></li>
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">294</span><span class="b-flat-list__label">номер квартиры</span></li>
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">6</span><span class="b-flat-list__label">номер этажа</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="b-flat__price"><span class="b-flat__old-price">6 533 660 ₽</span><span class="b-flat__actual-price">5 778 225 ₽</span><span class="b-flat__m2-price">или 73 142 за м2</span>
+                            <div class="b-flat__label"><span class="tag tag--green">
+                                <svg class="icon icon-fa-check tag__icon">
+                                  <use xlink:href="assets/img/sprite/sprite.svg#fa-check"></use>
+                                </svg>Отделка</span></div>
+                          </div>
+                        </div>
+                      </div></a></div>
+                  <div class="b-flats__item"><a class="b-flat" href="#">
+                      <div class="row">
+                        <div class="col-lg-2 col-xl-3">
+                          <div class="b-flat__picture"><img src="assets/img/flat/item-4.png" alt="alt"/></div>
+                        </div>
+                        <div class="col-lg-7 col-xl-6">
+                          <div class="b-flat__desc"><span class="b-flat__placing">Корпус 14, Секция 3</span>
+                            <h2 class="b-flat__title">1-комнатная квартира, 42.04 м2</h2>
+                            <ul class="b-flat-list">
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">42.01</span><span class="b-flat-list__label">м2, общая площадь</span></li>
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">279</span><span class="b-flat-list__label">номер квартиры</span></li>
+                              <li class="b-flat-list__item"><span class="b-flat-list__val">3</span><span class="b-flat-list__label">номер этажа</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="b-flat__price"><span class="b-flat__old-price">4 533 660 ₽</span><span class="b-flat__actual-price">3 350 140 ₽</span><span class="b-flat__m2-price">или 79 765 за м2</span>
+                            <div class="b-flat__label"><span class="tag tag--green">
+                                <svg class="icon icon-fa-check tag__icon">
+                                  <use xlink:href="assets/img/sprite/sprite.svg#fa-check"></use>
+                                </svg>Отделка</span></div>
+                          </div>
+                        </div>
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="b-scheme">
+            <h1 class="h1 b-heading">Генплан</h1>
+            <div class="b-scheme__body">
+              <div class="b-scheme__change">
+                <button class="button button--md button--red">
+                  <svg class="icon icon-fa-sync button__icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-sync"></use>
+                  </svg>изменить ракурс
+                </button>
+              </div>
+              <div class="b-scheme__item b-scheme__item--st-1" style="background-image: url(assets/img/scheme/item-1.jpg)">
+                <div class="b-scheme__corps b-scheme__corps--13 js-crops-details-block">
+                  <div class="corps-circle js-crops-details-button"><span class="corps-circle__label">Корпус</span><span class="corps-circle__number">№13</span></div>
+                  <div class="b-scheme__corps-details">
+                    <div class="b-corps-details">
+                      <button class="b-corps-details__close js-crops-details-close">
+                        <svg class="icon icon-fa-times b-corps-details__close-icon">
+                          <use xlink:href="assets/img/sprite/sprite.svg#fa-times"></use>
+                        </svg>
+                      </button>
+                      <div class="b-corps-details__header">
+                        <div class="b-corps-details__title">Корпус №13</div>
+                        <div class="b-corps-details__realiz">Ввод в эксплуатацию - 4 квартал 2021</div><a class="b-corps-details__device" href="#">Устройство котловвана</a>
+                      </div>
+                      <div class="b-corps-details__body">
+                        <table class="b-corps-details__table">
+                          <tr>
+                            <td>1 комната</td>
+                            <td>От <strong> 11.1 млн.р</strong></td>
+                            <td class="end">В продаже <strong class="red-link"> 1</strong></td>
+                          </tr>
+                          <tr>
+                            <td>2 комнаты</td>
+                            <td>От <strong> 15.1 млн.р</strong></td>
+                            <td class="end">В продаже <strong class="red-link"> 4</strong></td>
+                          </tr>
+                          <tr>
+                            <td>3 комнаты</td>
+                            <td>От <strong> 18.1 млн.р</strong></td>
+                            <td class="end">В продаже <strong class="red-link"> 13</strong></td>
+                          </tr>
+                          <tr>
+                            <td>4 комнаты</td>
+                            <td>От <strong> 18.1 млн.р</strong></td>
+                            <td class="end">В продаже <strong class="red-link"> 1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-scheme__corps b-scheme__corps--14 js-crops-details-block">
+                  <div class="corps-circle js-crops-details-button"><span class="corps-circle__label">Корпус</span><span class="corps-circle__number">№14</span></div>
+                  <div class="b-scheme__corps-details">
+                    <div class="b-corps-details">
+                      <button class="b-corps-details__close js-crops-details-close">
+                        <svg class="icon icon-fa-times b-corps-details__close-icon">
+                          <use xlink:href="assets/img/sprite/sprite.svg#fa-times"></use>
+                        </svg>
+                      </button>
+                      <div class="b-corps-details__header">
+                        <div class="b-corps-details__title">Корпус №14</div>
+                        <div class="b-corps-details__realiz">Ввод в эксплуатацию - 4 квартал 2021</div><a class="b-corps-details__device" href="#">Устройство котловвана</a>
+                      </div>
+                      <div class="b-corps-details__body">
+                        <table class="b-corps-details__table">
+                          <tr>
+                            <td>1 комната</td>
+                            <td>От <strong> 11.1 млн.р</strong></td>
+                            <td class="end">В продаже <strong class="red-link"> 1</strong></td>
+                          </tr>
+                          <tr>
+                            <td>2 комнаты</td>
+                            <td>От <strong> 15.1 млн.р</strong></td>
+                            <td class="end">В продаже <strong class="red-link"> 4</strong></td>
+                          </tr>
+                          <tr>
+                            <td>3 комнаты</td>
+                            <td>От <strong> 18.1 млн.р</strong></td>
+                            <td class="end">В продаже <strong class="red-link"> 13</strong></td>
+                          </tr>
+                          <tr>
+                            <td>4 комнаты</td>
+                            <td>От <strong> 18.1 млн.р</strong></td>
+                            <td class="end">В продаже <strong class="red-link"> 1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-scheme__corps b-scheme__corps--section-2-4">
+                  <div class="corps-section"><span class="corps-section__label">Секции</span><span class="corps-section__number">2-4</span><span class="corps-section__realize">Сдача 4 квартал <br/> 2020 г.</span><a class="corps-section__select-flat" href="#">Выбрать квартиру</a></div>
+                </div>
+                <div class="b-scheme__corps b-scheme__corps--section-5-8">
+                  <div class="corps-section"><span class="corps-section__label">Секции</span><span class="corps-section__number">5-8</span><span class="corps-section__realize">Сдача 2 квартал <br/> 2019 г.</span><a class="corps-section__select-flat" href="#">Выбрать квартиру</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="b-mortgage-section" style="background-image: url(assets/img/section/item-2.png)">
+            <div class="b-vertical-title">
+              <div class="b-vertical-title__border"></div><span class="b-vertical-title__title">Дом для вашей семьи</span>
+            </div>
+            <div class="container">
+              <div class="row align-items-center no-gutters">
+                <div class="col-sm-6 order-sm-1">
+                  <div class="b-mortgage-section__image">
+                    <div class="b-image-decoration"><img src="assets/img/utils/mortgage-form.jpg" alt="alt"/></div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="b-mortgage-section__form">
+                    <form class="b-form" method="post" action="/">
+                      <h1 class="b-form__caption">Ипотека</h1>
+                      <p>Отправьте заявку онлайн сразу в несколько банков и <strong class="strong">сократите время оформления ипотеки</strong>.</p>
+                      <div class="b-form__body">
+                        <div class="b-range-input">
+                          <div class="b-range-input__label">Стоимость недвижимости</div>
+                          <div class="b-range-input__text-field-wrap">
+                            <input class="b-range-input__value js-range-mortgage-price-val" type="text" value="100"/>
+                          </div>
+                          <div class="b-range-input__slider js-range-mortgage-price"></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-9">
+                            <div class="b-range-input">
+                              <div class="b-range-input__label">Первоначальный взнос</div>
+                              <div class="b-range-input__text-field-wrap"><span class="b-range-input__right-content js-range-mortgage-rate"></span>
+                                <input class="b-range-input__value js-range-mortgage-initial-fee-val" type="text" value="10"/>
+                              </div>
+                              <div class="b-range-input__slider js-range-mortgage-initial-fee"></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="b-range-input">
+                              <div class="b-range-input__label">Срок</div>
+                              <div class="b-range-input__text-field-wrap">
+                                <input class="b-range-input__value js-range-mortgage-term-val" type="text" value=""/>
+                              </div>
+                              <div class="b-range-input__slider js-range-mortgage-term"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="b-form__suits">
+                          <div class="b-form__suits-logos"><img src="assets/img/utils/logos.png" alt="alt"/></div>
+                          <div class="b-form__suits-desc"><span class="b-form__suits-title">Вам подходит</span><strong class="strong">7 программ</strong>
+                            <div class="b-form__suits-price">от 40 000 руб./мес.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="b-form__button">
+                        <button class="button button--xl button--w100 js-send">Подать заявку</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="b-infrastructure">
+            <h1 class="h1 b-heading">Инфраструктура</h1>
+            <div class="b-infrastructure__body">
+              <div class="b-infrastructure__address">
+                <div class="b-infrastructure__address-title">КВАРТАЛ 29</div>
+                <div class="b-infrastructure__address-desc">г. Мытищи, ул. Стрелковая, мкрн 29 <br/> +7 (495) 407-78-06</div>
+              </div>
+              <div class="b-infrastructure__list">
+                <div class="b-infrastructure-list">
+                  <div class="b-infrastructure-list__header">
+                    <div class="b-infrastructure-list__title">Инфраструктура ЖК Квартал 29</div>
+                    <div class="b-infrastructure-list__sub-desc">Медицинские учреждения</div>
+                  </div>
+                  <div class="b-infrastructure-list__body">
+                    <table class="b-infrastructure-list__list-distances">
+                      <tr>
+                        <td>
+                          <div class="b-infrastructure-list__distance">920 м</div>
+                        </td>
+                        <td>Ветеринарная клиника</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="b-infrastructure-list__distance">310 м</div>
+                        </td>
+                        <td>Аптека</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="b-infrastructure-list__distance">430 м</div>
+                        </td>
+                        <td>Детская поликлиника № 3</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="b-infrastructure-list__distance">200 м</div>
+                        </td>
+                        <td>Поликлиника № 3</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="b-infrastructure__change">
+                <ul class="b-infrastructure-change js-infrastructure-change-slider">
+                  <li class="b-infrastructure-change__item"><a class="b-infrastructure-change__link b-infrastructure-change__link--st-1 is-active" href="#">
+                      <svg class="icon icon-hospital-buildings b-infrastructure-change__icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#hospital-buildings"></use>
+                      </svg><span class="b-infrastructure-change__title">Медицинские учреждения</span></a></li>
+                  <li class="b-infrastructure-change__item"><a class="b-infrastructure-change__link b-infrastructure-change__link--st-2" href="#">
+                      <svg class="icon icon-gummy-bear b-infrastructure-change__icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#gummy-bear"></use>
+                      </svg><span class="b-infrastructure-change__title">Медицинские учреждения</span></a></li>
+                  <li class="b-infrastructure-change__item"><a class="b-infrastructure-change__link b-infrastructure-change__link--st-3" href="#">
+                      <svg class="icon icon-food b-infrastructure-change__icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#food"></use>
+                      </svg><span class="b-infrastructure-change__title">Медицинские учреждения</span></a></li>
+                  <li class="b-infrastructure-change__item"><a class="b-infrastructure-change__link b-infrastructure-change__link--st-4" href="#">
+                      <svg class="icon icon-tree b-infrastructure-change__icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#tree"></use>
+                      </svg><span class="b-infrastructure-change__title">Медицинские учреждения</span></a></li>
+                  <li class="b-infrastructure-change__item"><a class="b-infrastructure-change__link b-infrastructure-change__link--st-5" href="#">
+                      <svg class="icon icon-open-book b-infrastructure-change__icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#open-book"></use>
+                      </svg><span class="b-infrastructure-change__title">Медицинские учреждения</span></a></li>
+                  <li class="b-infrastructure-change__item"><a class="b-infrastructure-change__link b-infrastructure-change__link--st-6" href="#">
+                      <svg class="icon icon-coffe-cup b-infrastructure-change__icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#coffe-cup"></use>
+                      </svg><span class="b-infrastructure-change__title">Медицинские учреждения</span></a></li>
+                  <li class="b-infrastructure-change__item"><a class="b-infrastructure-change__link b-infrastructure-change__link--st-7" href="#">
+                      <svg class="icon icon-bank-building b-infrastructure-change__icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#bank-building"></use>
+                      </svg><span class="b-infrastructure-change__title">Медицинские учреждения</span></a></li>
+                  <li class="b-infrastructure-change__item"><a class="b-infrastructure-change__link b-infrastructure-change__link--st-8" href="#">
+                      <svg class="icon icon-eagle b-infrastructure-change__icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#eagle"></use>
+                      </svg><span class="b-infrastructure-change__title">Медицинские учреждения</span></a></li>
+                  <li class="b-infrastructure-change__item"><a class="b-infrastructure-change__link b-infrastructure-change__link--st-9" href="#">
+                      <svg class="icon icon-circus-tent b-infrastructure-change__icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#circus-tent"></use>
+                      </svg><span class="b-infrastructure-change__title">Медицинские учреждения</span></a></li>
+                </ul>
+              </div>
+              <div class="b-infrastructure__maps" id="infrastructure-map"></div>
+            </div>
+          </section>
+          <section class="b-progress">
+            <div class="container">
+              <div class="b-heading">
+                <div class="row justify-content-between">
+                  <div class="col-sm-auto">
+                    <h1 class="h1 b-heading__title">Ход строительства</h1>
+                  </div>
+                  <div class="col-sm-auto">
+                    <div class="b-date-settlement">
+                      <div class="b-date-settlement__icon">
+                        <svg class="icon icon-fa-clock ">
+                          <use xlink:href="assets/img/sprite/sprite.svg#fa-clock"></use>
+                        </svg>
+                      </div>
+                      <div class="b-date-settlement__desc"><span class="b-date-settlement__title">Ближайшая дата заселения:</span><span class="b-date-settlement__date">24 июня 2019 года</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-progress__slider">
+                <div class="o-slick o-slick--gutter">
+                  <div class="o-slick__arrow o-slick__arrow--prev">
+                    <svg class="icon icon-arrow-left ">
+                      <use xlink:href="assets/img/sprite/sprite.svg#arrow-left"></use>
+                    </svg>
+                  </div>
+                  <div class="o-slick__arrow o-slick__arrow--next">
+                    <svg class="icon icon-arrow-right ">
+                      <use xlink:href="assets/img/sprite/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                  <div class="js-progress-slider">
+                    <div class="o-slick__item"><a class="b-gallery-item" href="#"><span class="b-gallery-item__date">Апрель 2019</span>
+                        <div class="b-gallery-item__picture"><img src="assets/img/progress/item-1.jpg" alt="alt"/></div>
+                        <div class="b-gallery-item__body"><span class="b-gallery-item__section">Секции 2-4</span>
+                          <h3 class="h3">В процессе строительства</h3>
+                        </div></a></div>
+                    <div class="o-slick__item"><a class="b-gallery-item" href="#"><span class="b-gallery-item__date">Апрель 2019</span>
+                        <div class="b-gallery-item__picture"><img src="assets/img/progress/item-2.jpg" alt="alt"/></div>
+                        <div class="b-gallery-item__body"><span class="b-gallery-item__section">Секции 5-8</span>
+                          <h3 class="h3">В процессе строительства</h3>
+                        </div></a></div>
+                    <div class="o-slick__item"><a class="b-gallery-item" href="#"><span class="b-gallery-item__date">Март 2019</span>
+                        <div class="b-gallery-item__picture"><img src="assets/img/progress/item-3.jpg" alt="alt"/></div>
+                        <div class="b-gallery-item__body"><span class="b-gallery-item__section">Секции 2-4</span>
+                          <h3 class="h3">В процессе строительства</h3>
+                        </div></a></div>
+                    <div class="o-slick__item"><a class="b-gallery-item" href="#"><span class="b-gallery-item__date">Март 2019</span>
+                        <div class="b-gallery-item__picture"><img src="assets/img/progress/item-3.jpg" alt="alt"/></div>
+                        <div class="b-gallery-item__body"><span class="b-gallery-item__section">Секции 2-4</span>
+                          <h3 class="h3">В процессе строительства</h3>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="b-online-camera">
+            <div class="b-online-camera__container container">
+              <div class="b-online-camera__body" style="background-image: url(assets/img/section/item-4.jpg)">
+                <div class="b-online-camera__caption">
+                  <div class="b-online-camera__button"><a class="b-action js-modal-button" href="#add-sources">
+                      <div class="b-action__icon"><span class="actions-sprite camera"></span></div><span class="b-action__title">Онлайн камера</span></a></div>
+                  <div class="b-home-caption b-home-caption--md"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="b-news">
+            <div class="b-vertical-title">
+              <div class="b-vertical-title__border"></div><span class="b-vertical-title__title">Следите за нашими новостями</span>
+            </div>
+            <div class="container">
+              <div class="b-heading">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-sm-auto">
+                    <h1 class="h1 b-heading__title b-heading__title--mb-0">Новости</h1>
+                  </div>
+                  <div class="col-sm-auto d-none d-sm-block"><a class="button button--transparent button--sm" href="#">Все новости</a></div>
+                </div>
+              </div>
+              <div class="b-news__slider">
+                <div class="o-slick o-slick--gutter">
+                  <div class="o-slick__arrow o-slick__arrow--prev">
+                    <svg class="icon icon-arrow-left ">
+                      <use xlink:href="assets/img/sprite/sprite.svg#arrow-left"></use>
+                    </svg>
+                  </div>
+                  <div class="o-slick__arrow o-slick__arrow--next">
+                    <svg class="icon icon-arrow-right ">
+                      <use xlink:href="assets/img/sprite/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                  <div class="js-news-slider">
+                    <div class="o-slick__item"><a class="b-news-item" href="#">
+                        <div class="b-news-item__picture"><img src="assets/img/utils/news-1.jpg" alt="alt"/></div>
+                        <div class="b-news-item__body"><span class="b-news-item__date">24 Апреля 2019</span>
+                          <h4 class="h4 b-news-item__caption">Режим работы Офиса продаж в майские праздники</h4>
+                          <p class="b-news-item__text">Уважаемые клиенты! Информируем вас о том, что в период майских праздников Офис продаж Уважаемые клиенты! Информируем вас о том, что в период майских</p>
+                        </div></a></div>
+                    <div class="o-slick__item"><a class="b-news-item" href="#">
+                        <div class="b-news-item__picture"><img src="assets/img/utils/news-2.jpg" alt="alt"/></div>
+                        <div class="b-news-item__body"><span class="b-news-item__date">4 Апреля 2019</span>
+                          <h4 class="h4 b-news-item__caption">Новости строительства корпуса 14 проекта «Квартал 29»</h4>
+                          <p class="b-news-item__text">На строительной площадке I этапа корпуса №14 (секции 5-8) проекта «Квартал 29» в г. Мытищи...</p>
+                        </div></a></div>
+                    <div class="o-slick__item"><a class="b-news-item" href="#">
+                        <div class="b-news-item__picture"><img src="assets/img/utils/news-2.jpg" alt="alt"/></div>
+                        <div class="b-news-item__body"><span class="b-news-item__date">4 Апреля 2019</span>
+                          <h4 class="h4 b-news-item__caption">Новости строительства корпуса 14 проекта «Квартал 29»</h4>
+                          <p class="b-news-item__text">На строительной площадке I этапа корпуса №14 (секции 5-8) проекта «Квартал 29» в г. Мытищи...</p>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="b-news__slider-buttons">
+                  <div class="b-news__slider-buttons-item d-sm-none"><a class="button button--transparent button--sm-w100" href="#">Все новости</a></div>
+                  <div class="b-news__slider-buttons-item"><a class="button button--sm-w100 button--sm" href="#">ПОДПИСАТЬСЯ НА НОВОСТИ</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="c-footer">
+        <div class="container">
+          <div class="c-footer__top-line">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-md-auto">
+                <div class="c-footer__logo"><svg id="Mts_1" xmlns="http://www.w3.org/2000/svg" viewBox="126 69 173 80" width="173" height="38"><style>.mts1{fill:#636466}</style><path class="mts1" d="M173.5 72.8h-.1l.1.7v15.4h-2.6V69.7h3.9l5.9 15.8 6-15.8h3.9v19.2H188V73.5l.1-.7h-.1l-6.2 16.1h-2.1zM197.8 77.5h5.5c3.9 0 6.2 2.1 6.2 5.7 0 5-4.1 5.6-6.2 5.6h-8.1V69.7h2.6v7.8zm0 9.2h5.2c1.4 0 3.9-.5 3.9-3.5 0-3.6-3.3-3.5-5.3-3.5h-3.8v7zm16.2 2.2h-2.6V69.7h2.6v19.2zM216.7 71.9v-2.2h15v2.2h-6.2v17H223v-17zM247.2 69.7h2.6v19.2h-2.6V73.4L237 88.9h-2.6V69.7h2.6v15.4zM257 86.7h7.7v-17h2.6v17h7.7v-17h2.6v17h2.8l-.2 6.5H278v-4.3h-23.6V69.7h2.6zM295.9 69.7h2.6v19.2h-2.6V73.4l-10.2 15.5h-2.6V69.7h2.6v15.4zM305.7 88.9h-2.6V69.7h2.6v8h9.6v-8h2.6v19.2h-2.6v-9h-9.6zM338.6 82.5c-.3 2.8-2 6.9-8.1 6.9-5.7 0-9.1-3.7-9.1-9.8 0-10.2 7.4-10.5 9-10.5 6.1 0 7.6 3.6 7.9 6.5h-2.6c-.1-1.4-1-4.3-5.4-4.3-4.8 0-6.3 4-6.3 8.2 0 4.5 2.4 7.8 6.5 7.8 3.1 0 5.3-2 5.4-4.8h2.7zM353.2 69.7h3.1l-9.1 8.9 9.7 10.3h-3.3l-9-10v10H342V69.7h2.6v8.8z"/><path class="mts1" d="M359.5 88.9h-2.8l7.2-19.1h2.7l7.2 19.1H371l-1.8-4.9h-8.1l-1.6 4.9zm9.2-7.1l-3.3-9.4-3.3 9.4h6.6zM383.2 81.3l-4.7 7.6h-3.2l5.2-7.9c-1.8-.1-5.2-1.1-5.2-5.5 0-3.1 1.7-5.7 6.6-5.7h8.2v19.1h-2.6v-7.6h-4.3zm-1.1-9.4c-3.4 0-4.2 2.1-4.2 3.6s.6 3.6 4.5 3.6h5v-7.2h-5.3zM187 111.1c-.3 2.8-2 6.9-8.1 6.9-5.7 0-9.1-3.7-9.1-9.8 0-10.2 7.4-10.5 9-10.5 6.1 0 7.6 3.6 7.9 6.5h-2.6c-.1-1.4-1-4.3-5.4-4.3-4.8 0-6.3 4-6.3 8.2 0 4.5 2.4 7.8 6.5 7.8 3.1 0 5.3-2 5.4-4.8h2.7zM188.4 100.4v-2.1h15v2.1h-6.2v17h-2.6v-17zM213.9 98.3c3.9 0 6.5 1.5 6.5 5.5 0 3.6-1.8 6-6.7 6h-5v7.6h-2.6V98.3h7.8zm-5.2 9.3h4.7c3 0 4.4-1.3 4.4-3.8 0-2.4-1.4-3.4-4.4-3.4h-4.7v7.2zM231.6 97.7c4.3 0 9.1 2.4 9.1 10.1 0 10-8 10.1-9.1 10.1-1.3 0-9.1-.1-9.1-10.1 0-6.6 3.8-10.1 9.1-10.1m0 18.1c1.3 0 6.4-.3 6.4-8 0-4.5-2-8-6.4-8-5.9 0-6.4 5.9-6.4 8 0 3.1.9 8 6.4 8M257.1 98.3h2.5v19.1h-2.5v-15.5l-10.2 15.5h-2.6V98.3h2.6v15.4zM262.3 100.4v-2.1h15v2.1h-6.2v17h-2.6v-17zM292.6 106.5v2.1h-10v6.7h11.3v2.1H280V98.3h13.6v2.1h-11v6.1zM294.8 115.2c2.5.5 4.5-1.5 4.5-8.7v-8.2h12v19.1h-2.6v-17h-6.9v6.6c0 8.9-3.3 11-7.1 10.4v-2.2zM318.5 106.1h5.5c2.3 0 6.2.8 6.2 5.7 0 5-4.2 5.6-6.2 5.6h-8.1V98.3h2.6v7.8zm0 9.2h5.2c.6 0 3.9-.1 3.9-3.5 0-1.6-.7-3.5-4.2-3.5h-4.9v7zM335.9 117.4h-2.5V98.3h2.5v8h9.7v-8h2.5v19.1h-2.5v-9h-9.7zM353.1 117.4h-2.8l7.2-19.1h2.7l7.2 19.1h-2.8l-1.8-4.9h-8.1l-1.6 4.9zm9.2-7.1l-3.3-9.4-3.3 9.4h6.6zM376.8 109.8l-4.7 7.6H369l5.2-7.9c-1.8-.1-5.2-1.1-5.2-5.6 0-3.1 1.7-5.7 6.6-5.7h8.2v19.1h-2.6v-7.6h-4.4zm-1-9.4c-3.4 0-4.2 2.1-4.2 3.6s.6 3.6 4.5 3.6h5v-7.2h-5.3zM182.1 126.8h3.1l-9.1 8.9 9.7 10.3h-3.3l-9-10v10h-2.6v-19.2h2.6v8.8zM196.1 126.3c4.3 0 9.1 2.4 9.1 10.1 0 10-8 10.1-9.1 10.1-1.3 0-9.1-.1-9.1-10.1-.1-6.7 3.7-10.1 9.1-10.1m0 18.1c1.3 0 6.4-.3 6.4-8 0-4.5-2-8-6.4-8-5.9 0-6.4 5.9-6.4 8 0 3.1.9 8 6.4 8M211.3 129.9V146h-2.5v-19.2h3.8l6 15.8 6-15.8h3.9V146h-2.6v-16.1l-6.3 16.1h-2zM235.7 146h-2.6v-19.2h14.8V146h-2.6v-17h-9.6zM252.8 146H250l7.2-19.1h2.7l7.2 19.1h-2.8l-1.8-5h-8.1l-1.6 5zm9.2-7.1l-3.3-9.4-3.3 9.4h6.6zM272.1 146h-2.6v-19.2h2.6v8h9.6v-8h2.6V146h-2.6v-9h-9.6zM301.7 126.8h2.6V146h-2.6v-15.5L291.5 146h-2.6v-19.2h2.6v15.4zM316 138.4l-4.7 7.6h-3.2l5.2-7.9c-1.8-.1-5.2-1.1-5.2-5.6 0-3.1 1.7-5.7 6.6-5.7h8.2V146h-2.6v-7.6H316zm-1.1-9.4c-3.4 0-4.2 2.1-4.2 3.6s.6 3.6 4.5 3.6h5V129h-5.3z"/><path fill="#de8a2e" d="M110.2 146.5L143.4 69v-.2h-33.1v-.1L77 146.3l.1.2z"/><path fill="#d35a2a" d="M77.1 146.5L43.9 69v-.2H77v-.1l33.3 77.6-.1.2z"/><path fill="#b12228" d="M33.2 68.7h33.4v77.7H33.2z"/><path fill="#efc030" d="M121.5 68.7h33.4v77.7h-33.4z"/></svg></div>
+              </div>
+              <div class="col-md-auto">
+                <div class="c-footer__social">
+                  <ul class="b-social">
+                    <li class="b-social__item"><a class="b-social__link" href="#">
+                        <svg class="icon icon-fa-vk b-social__icon">
+                          <use xlink:href="assets/img/sprite/sprite.svg#fa-vk"></use>
+                        </svg></a></li>
+                    <li class="b-social__item"><a class="b-social__link" href="#">
+                        <svg class="icon icon-fa-fb b-social__icon">
+                          <use xlink:href="assets/img/sprite/sprite.svg#fa-fb"></use>
+                        </svg></a></li>
+                    <li class="b-social__item"><a class="b-social__link" href="#">
+                        <svg class="icon icon-fa-insta b-social__icon">
+                          <use xlink:href="assets/img/sprite/sprite.svg#fa-insta"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-footer__body js-toggle-panel">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="b-footer-list js-toggle-panel-item">
+                  <div class="b-footer-list__header js-toggle-panel-button">
+                    <h4 class="b-footer-list__caption">О проекте</h4>
+                    <svg class="icon icon-fa-angle-down b-footer-list__icon">
+                      <use xlink:href="assets/img/sprite/sprite.svg#fa-angle-down"></use>
+                    </svg>
+                  </div>
+                  <div class="b-footer-list__body">
+                    <ul class="b-footer-list__list">
+                      <li class="b-footer-list__item"><a href="#">Новости</a></li>
+                      <li class="b-footer-list__item"><a href="#">О застройщике</a></li>
+                      <li class="b-footer-list__item"><a href="#">Документация</a></li>
+                      <li class="b-footer-list__item"><a href="#">Фотогалерея</a></li>
+                      <li class="b-footer-list__item"><a href="#">Инфраструктура</a></li>
+                      <li class="b-footer-list__item"><a href="#">Расположение</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="b-footer-list js-toggle-panel-item">
+                  <div class="b-footer-list__header js-toggle-panel-button">
+                    <h4 class="b-footer-list__caption">Выбор помещения</h4>
+                    <svg class="icon icon-fa-angle-down b-footer-list__icon">
+                      <use xlink:href="assets/img/sprite/sprite.svg#fa-angle-down"></use>
+                    </svg>
+                  </div>
+                  <div class="b-footer-list__body">
+                    <ul class="b-footer-list__list">
+                      <li class="b-footer-list__item"><a href="#">Квартира</a></li>
+                      <li class="b-footer-list__item"><a href="#">Квартира с отделкой</a></li>
+                      <li class="b-footer-list__item"><a href="#">Машиноместа</a></li>
+                      <li class="b-footer-list__item"><a href="#">Кладовые</a></li>
+                      <li class="b-footer-list__item"><a href="#">Инфраструктура</a></li>
+                      <li class="b-footer-list__item"><a href="#">Коммерческие помещения</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="b-footer-list js-toggle-panel-item">
+                  <div class="b-footer-list__header js-toggle-panel-button">
+                    <h4 class="b-footer-list__caption">Ипотечные программы</h4>
+                    <svg class="icon icon-fa-angle-down b-footer-list__icon">
+                      <use xlink:href="assets/img/sprite/sprite.svg#fa-angle-down"></use>
+                    </svg>
+                  </div>
+                  <div class="b-footer-list__body">
+                    <ul class="b-footer-list__list">
+                      <li class="b-footer-list__item"><a href="#">Военная ипотека</a></li>
+                      <li class="b-footer-list__item"><a href="#">Ипотека с материским капиталом</a></li>
+                      <li class="b-footer-list__item"><a href="#">Рассрочка</a></li>
+                      <li class="b-footer-list__item"><a href="#">Калькулятор</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <ul class="b-footer-list b-footer-list--bold">
+                  <li class="b-footer-list__item"><a class="b-footer-list__caption" href="#">Акции и спецпредложения</a></li>
+                  <li class="b-footer-list__item"><a class="b-footer-list__caption" href="#">Ход строительства</a></li>
+                  <li class="b-footer-list__item"><a class="b-footer-list__caption" href="#">Реконструкция микрорайона 29</a></li>
+                  <li class="b-footer-list__item"><a class="b-footer-list__caption" href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="c-footer__bottom-line">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-md-auto"><span class="c-footer__copyright">© Микрорайон «г. Мытищи, ул. Стрелковая», 2015-2019</span></div>
+              <div class="col-md-auto">
+                <ul class="b-footer-links">
+                  <li class="b-footer-links__item"><a class="b-footer-links__link" href="#">Правовая информация</a></li>
+                  <li class="b-footer-links__item"><a class="b-footer-links__link" href="#">Лицензия банков</a></li>
+                  <li class="b-footer-links__item"><a class="b-footer-links__link" href="#">Проектная документация</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="b-menu js-menu">
+        <div class="b-menu__pictures" style="background-image: url(assets/img/utils/menu.jpg)"></div>
+        <div class="b-menu__content">
+          <div class="b-menu__header">
+            <div class="row align-items-center">
+              <div class="b-menu__logo"><a class="b-logo" href="/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5 18 300 250" width="70" height="61"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="12.307" y1="142.732" x2="299.713" y2="142.732"><stop offset="0" stop-color="#cd5c2e"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M290.2 26.5V259H21.8V26.5h268.4m9.5-9.5H12.3v251.5h287.4V17z" fill="url(#a)"/><defs><path id="b" d="M86.7 203.4h60.7v32.7H43.9v-19.8c8.6-9.4 18.4-19.5 29.5-30.2 24.8-23.7 36.3-41.9 36.3-54.5 0-16.8-6.6-25.2-19.9-25.2-13.4 0-21.2 6.9-23.5 20.8 0 1 .2 2.2 1.3 2.7 4.6.3 8.4 1.6 11.4 3.8 3.8 2.9 5.9 7.1 6.1 12.5.3 5.3-1.1 9.6-4.2 12.9-3 3.4-7.2 5.2-12.5 5.4-6.5.3-11.9-1.7-16.1-5.9-4.1-4.1-6-9.6-7-16.5-.4-3.1-.4-3.9-.4-5.7 0-28.4 17.6-42.6 52.7-42.6 14.9 0 27.1 3.7 36.7 11 9.6 7.3 14.4 16.7 14.4 28.1 0 13.1-9.5 27.3-28.4 42.7l-12.7 10.3-14.1 11.8c-1.1.8-3.3 3.3-6.8 5.7zm182.7-39.5c0 22.8-5.7 40.7-17.1 53.8-11.4 13.1-27.1 19.6-46.9 19.6-26.6 0-39.9-9-39.9-28.9 0-1.3.1-3 .2-5.1h21.6c-.1 1.6-.2 3.1-.2 4.5 0 12.9 2.4 18.3 14.6 18.3 8.4 0 14.3-3.3 17.6-9.8 3.3-6.5 5.8-19.8 7.4-39.8-8.6 7.8-17.3 11.7-26.3 11.7-12.3 0-22.4-4.3-30.3-12.9-7.9-8.6-11.8-19.6-11.8-33 0-15 4.7-27.1 14.2-36.2 9.5-9.1 22-13.7 37.5-13.7 39.6.1 59.4 23.9 59.4 71.5zM228 140c0-24.2-5-36.3-14.9-36.3-10 0-15 12.9-15 38.7 0 21 4.4 31.5 13.1 31.5 11.3 0 16.8-11.3 16.8-33.9z"/></defs><clipPath id="c"><use xlink:href="#b" overflow="visible"/></clipPath><g clip-path="url(#c)"><path d="M14.9 261.8V20h279.3v241.8H14.9z" fill="#fff"/></g><linearGradient id="d" gradientUnits="userSpaceOnUse" x1="222.975" y1="280.341" x2="222.975" y2="204.458"><stop offset="0" stop-color="#ca4d28"/><stop offset="1" stop-color="#c94826"/></linearGradient><path clip-path="url(#c)" fill="url(#d)" d="M242.4 203.4v77.8l-38.9-38.9z"/><linearGradient id="e" gradientUnits="userSpaceOnUse" x1="222.972" y1="202.513" x2="222.972" y2="127.384"><stop offset="0" stop-color="#d06429"/><stop offset="1" stop-color="#cb5227"/></linearGradient><path clip-path="url(#c)" fill="url(#e)" d="M242.4 125.6v77.8l-38.9-38.9z"/><linearGradient id="f" gradientUnits="userSpaceOnUse" x1="222.975" y1="124.262" x2="222.975" y2="85.353"><stop offset="0" stop-color="#c73b27"/><stop offset="1" stop-color="#c63627"/></linearGradient><path clip-path="url(#c)" fill="url(#f)" d="M242.4 47.8v77.8l-38.9-38.9z"/><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="203.517" y1="162.357" x2="203.517" y2="125.969"><stop offset="0" stop-color="#c84027"/><stop offset="1" stop-color="#c73b27"/></linearGradient><path clip-path="url(#c)" fill="url(#g)" d="M242.4 125.6l-38.9 38.9-38.9-38.9z"/><linearGradient id="h" gradientUnits="userSpaceOnUse" x1="203.517" y1="204.962" x2="203.517" y2="240.876"><stop offset="0" stop-color="#d06629"/><stop offset="1" stop-color="#d2702a"/></linearGradient><path clip-path="url(#c)" fill="url(#h)" d="M242.4 203.4l-38.9 38.9-38.9-38.9z"/><linearGradient id="i" gradientUnits="userSpaceOnUse" x1="203.517" y1="126.862" x2="203.517" y2="84.988"><stop offset="0" stop-color="#cb4f27"/><stop offset="1" stop-color="#c94826"/></linearGradient><path clip-path="url(#c)" fill="url(#i)" d="M242.4 125.6h-77.8l38.9-38.9z"/><linearGradient id="j" gradientUnits="userSpaceOnUse" x1="203.517" y1="202.962" x2="203.517" y2="163.563"><stop offset="0" stop-color="#da892c"/><stop offset="1" stop-color="#d67d2d"/></linearGradient><path clip-path="url(#c)" fill="url(#j)" d="M242.4 203.4h-77.8l38.9-38.9z"/><linearGradient id="k" gradientUnits="userSpaceOnUse" x1="145.149" y1="105.981" x2="184.205" y2="67.213"><stop offset="0" stop-color="#d1692b"/><stop offset="1" stop-color="#ce6028"/></linearGradient><path clip-path="url(#c)" fill="url(#k)" d="M203.5 86.7l-38.9 38.9V47.8z"/><linearGradient id="l" gradientUnits="userSpaceOnUse" x1="184.063" y1="282.03" x2="184.063" y2="204.836"><stop offset="0" stop-color="#de982d"/><stop offset="1" stop-color="#da8b2f"/></linearGradient><path clip-path="url(#c)" fill="url(#l)" d="M203.5 242.3l-38.9 38.9v-77.8z"/><path clip-path="url(#c)" fill="#c31b1f" d="M203.5 164.5l-38.9 38.9v-77.8z"/><path clip-path="url(#c)" fill="#ca4d28" d="M164.6 203.4v77.8l-38.9-38.9z"/><linearGradient id="m" gradientUnits="userSpaceOnUse" x1="144.446" y1="183.942" x2="191.922" y2="138.146"><stop offset="0" stop-color="#cb5227"/><stop offset="1" stop-color="#cd5928"/></linearGradient><path clip-path="url(#c)" fill="url(#m)" d="M164.6 203.4l-38.9-38.9 38.9-38.9z"/><path clip-path="url(#c)" fill="#c73b27" d="M164.6 47.8v77.8l-38.9-38.9z"/><linearGradient id="n" gradientUnits="userSpaceOnUse" x1="106.752" y1="144.603" x2="129.813" y2="125.546"><stop offset="0" stop-color="#d5782d"/><stop offset="1" stop-color="#d26d2c"/></linearGradient><path clip-path="url(#c)" fill="url(#n)" d="M164.6 125.6l-38.9 38.9-38.9-38.9z"/><path clip-path="url(#c)" fill="#c84227" d="M125.7 164.5l38.9 38.9H86.8z"/><linearGradient id="o" gradientUnits="userSpaceOnUse" x1="125.689" y1="243.459" x2="125.689" y2="203.462"><stop offset="0" stop-color="#de9830"/><stop offset="1" stop-color="#da892c"/></linearGradient><path clip-path="url(#c)" fill="url(#o)" d="M164.6 203.4l-38.9 38.9-38.9-38.9z"/><path clip-path="url(#c)" fill="#c21b1d" d="M164.6 125.6H86.8l38.9-38.9z"/><linearGradient id="p" gradientUnits="userSpaceOnUse" x1="86.773" y1="86.668" x2="125.689" y2="86.668"><stop offset="0" stop-color="#c94826"/><stop offset="1" stop-color="#ca4a26"/></linearGradient><path clip-path="url(#c)" fill="url(#p)" d="M125.7 86.7l-38.9 38.9V47.8z"/><linearGradient id="q" gradientUnits="userSpaceOnUse" x1="88.923" y1="166.253" x2="106.054" y2="145.256"><stop offset="0" stop-color="#ce6028"/><stop offset="1" stop-color="#cd5928"/></linearGradient><path clip-path="url(#c)" fill="url(#q)" d="M125.7 164.5l-38.9 38.9v-77.8z"/><linearGradient id="r" gradientUnits="userSpaceOnUse" x1="106.231" y1="281.237" x2="106.231" y2="203.698"><stop offset="0" stop-color="#d2702a"/><stop offset="1" stop-color="#d06629"/></linearGradient><path clip-path="url(#c)" fill="url(#r)" d="M125.7 242.3l-38.9 38.9v-77.8z"/><linearGradient id="s" gradientUnits="userSpaceOnUse" x1="67.319" y1="280.341" x2="67.319" y2="205.52"><stop offset="0" stop-color="#de9830"/><stop offset="1" stop-color="#da8930"/></linearGradient><path clip-path="url(#c)" fill="url(#s)" d="M86.8 203.4v77.8l-38.9-38.9z"/><path clip-path="url(#c)" fill="#da892c" d="M86.8 203.4H8.9l39-38.9z"/><linearGradient id="t" gradientUnits="userSpaceOnUse" x1="68.91" y1="181.354" x2="94.057" y2="157.623"><stop offset="0" stop-color="#c84027"/><stop offset="1" stop-color="#c73d26"/></linearGradient><path clip-path="url(#c)" fill="url(#t)" d="M86.8 125.6v77.8l-38.9-38.9z"/><linearGradient id="u" gradientUnits="userSpaceOnUse" x1="15.44" y1="152.126" x2="83.73" y2="114.799"><stop offset="0" stop-color="#cc5627"/><stop offset="1" stop-color="#cb5227"/></linearGradient><path clip-path="url(#c)" fill="url(#u)" d="M86.8 125.6l-38.9 38.9-39-38.9z"/><linearGradient id="v" gradientUnits="userSpaceOnUse" x1="50.082" y1="86.668" x2="88.991" y2="86.668"><stop offset="0" stop-color="#c73927"/><stop offset="1" stop-color="#c63627"/></linearGradient><path clip-path="url(#c)" fill="url(#v)" d="M86.8 47.8v77.8L47.9 86.7z"/><linearGradient id="w" gradientUnits="userSpaceOnUse" x1="26.635" y1="224.46" x2="62.138" y2="192.593"><stop offset="0" stop-color="#d26d2a"/><stop offset="1" stop-color="#d06629"/></linearGradient><path clip-path="url(#c)" fill="url(#w)" d="M86.8 203.4l-38.9 38.9-39-38.9z"/><linearGradient id="x" gradientUnits="userSpaceOnUse" x1="46.127" y1="127.496" x2="67.156" y2="104.273"><stop offset="0" stop-color="#d1692b"/><stop offset="1" stop-color="#d06429"/></linearGradient><path clip-path="url(#c)" fill="url(#x)" d="M86.8 125.6H8.9l39-38.9z"/><linearGradient id="y" gradientUnits="userSpaceOnUse" x1="261.888" y1="120.46" x2="261.888" y2="81.545"><stop offset="0" stop-color="#cb4f28"/><stop offset="1" stop-color="#ca4a26"/></linearGradient><path clip-path="url(#c)" fill="url(#y)" d="M242.4 47.8l38.9 38.9-38.9 38.9z"/><path clip-path="url(#c)" fill="#d1692b" d="M281.3 86.7l39 38.9h-77.9z"/><linearGradient id="z" gradientUnits="userSpaceOnUse" x1="281.343" y1="160.245" x2="281.343" y2="125.54"><stop offset="0" stop-color="#c84027"/><stop offset="1" stop-color="#c73b27"/></linearGradient><path clip-path="url(#c)" fill="url(#z)" d="M242.4 125.6h77.9l-39 38.9z"/><linearGradient id="A" gradientUnits="userSpaceOnUse" x1="261.888" y1="205.047" x2="261.888" y2="127.216"><stop offset=".003" stop-color="#d9872c"/><stop offset="1" stop-color="#d26d2c"/></linearGradient><path clip-path="url(#c)" fill="url(#A)" d="M242.4 125.6l38.9 38.9-38.9 38.9z"/><linearGradient id="B" gradientUnits="userSpaceOnUse" x1="281.343" y1="201.273" x2="281.343" y2="163.056"><stop offset="0" stop-color="#d06429"/><stop offset="1" stop-color="#ce6028"/></linearGradient><path clip-path="url(#c)" fill="url(#B)" d="M281.3 164.5l39 38.9h-77.9z"/><linearGradient id="C" gradientUnits="userSpaceOnUse" x1="281.343" y1="224.979" x2="281.343" y2="204.094"><stop offset=".003" stop-color="#ca4a26"/><stop offset="1" stop-color="#c94826"/></linearGradient><path clip-path="url(#c)" fill="url(#C)" d="M242.4 203.4h77.9l-39 38.9z"/><path clip-path="url(#c)" fill="#c22020" d="M242.4 203.4l38.9 38.9-38.9 38.9z"/><g><linearGradient id="D" gradientUnits="userSpaceOnUse" x1="59.324" y1="83.538" x2="59.324" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M64 49.3h9.2l-13.3 15 14 17.7h-9.6L52.5 66h-.1v16h-7.8V49.3h7.8V63h.1L64 49.3z" fill="url(#D)"/><linearGradient id="E" gradientUnits="userSpaceOnUse" x1="91.915" y1="83.538" x2="91.915" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M94.3 49.3c8.7 0 10.2 4.8 10.2 8.3 0 3.8-2.3 5.8-5.5 6.8 2.6.5 7.1 2.3 7.1 8.4 0 7.9-6.8 9.2-12.7 9.2H77.7V49.3h16.6zm-8.8 12.9h7.2c3.1 0 3.9-2.1 3.9-3.4 0-1.4-.8-3.2-4.2-3.2h-6.9v6.6zm0 13.5h8.1c1.4 0 4.3-.7 4.3-3.7 0-3.1-2.5-3.7-5.3-3.7h-7.1v7.4z" fill="url(#E)"/><linearGradient id="F" gradientUnits="userSpaceOnUse" x1="124.357" y1="83.538" x2="124.357" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M128.3 49.3L140.8 82h-8.3l-2.1-6.1h-12l-2.1 6.1H108l12.4-32.7h7.9zm.3 21.1l-4.3-12.5-4.3 12.5h8.6z" fill="url(#F)"/><linearGradient id="G" gradientUnits="userSpaceOnUse" x1="159.44" y1="83.538" x2="159.44" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M160.9 49.3c6.7 0 12.5 2.5 12.5 10.6 0 10.2-8.7 10.9-12.7 10.9h-7.4V82h-7.8V49.3h15.4zm-8.2 15.1h6.1c3.7 0 5.6-1.3 5.6-4.5 0-4.4-3.8-4.3-5.6-4.3h-6.1v8.8z" fill="url(#G)"/><linearGradient id="H" gradientUnits="userSpaceOnUse" x1="189.35" y1="83.538" x2="189.35" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M175.4 55.7v-6.4h27.9v6.4h-10V82h-7.8V55.7h-10.1z" fill="url(#H)"/><linearGradient id="I" gradientUnits="userSpaceOnUse" x1="217.479" y1="83.538" x2="217.479" y2="40.527"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M221.4 49.3L233.9 82h-8.3l-2.1-6.1h-12l-2.1 6.1h-8.2l12.4-32.7h7.8zm.3 21.1l-4.3-12.5-4.4 12.5h8.7z" fill="url(#I)"/><linearGradient id="J" gradientUnits="userSpaceOnUse" x1="251.069" y1="83.423" x2="251.069" y2="40.413"><stop offset="0" stop-color="#c42427"/><stop offset="1" stop-color="#da8930"/></linearGradient><path d="M242.7 49.2l-.2 15.6c-.1 5.5-.4 11.6-7.7 10.7l2.4 6.6c11.6.4 12.5-9.3 12.6-15.2l.2-11.4h9.3v26.3h7.8V49.2h-24.4z" fill="url(#J)"/></g></svg></a></div>
+              <div class="b-menu__logo-company"><svg id="Mts_1" xmlns="http://www.w3.org/2000/svg" viewBox="126 69 173 80" width="173" height="38"><style>.mts1{fill:#636466}</style><path class="mts1" d="M173.5 72.8h-.1l.1.7v15.4h-2.6V69.7h3.9l5.9 15.8 6-15.8h3.9v19.2H188V73.5l.1-.7h-.1l-6.2 16.1h-2.1zM197.8 77.5h5.5c3.9 0 6.2 2.1 6.2 5.7 0 5-4.1 5.6-6.2 5.6h-8.1V69.7h2.6v7.8zm0 9.2h5.2c1.4 0 3.9-.5 3.9-3.5 0-3.6-3.3-3.5-5.3-3.5h-3.8v7zm16.2 2.2h-2.6V69.7h2.6v19.2zM216.7 71.9v-2.2h15v2.2h-6.2v17H223v-17zM247.2 69.7h2.6v19.2h-2.6V73.4L237 88.9h-2.6V69.7h2.6v15.4zM257 86.7h7.7v-17h2.6v17h7.7v-17h2.6v17h2.8l-.2 6.5H278v-4.3h-23.6V69.7h2.6zM295.9 69.7h2.6v19.2h-2.6V73.4l-10.2 15.5h-2.6V69.7h2.6v15.4zM305.7 88.9h-2.6V69.7h2.6v8h9.6v-8h2.6v19.2h-2.6v-9h-9.6zM338.6 82.5c-.3 2.8-2 6.9-8.1 6.9-5.7 0-9.1-3.7-9.1-9.8 0-10.2 7.4-10.5 9-10.5 6.1 0 7.6 3.6 7.9 6.5h-2.6c-.1-1.4-1-4.3-5.4-4.3-4.8 0-6.3 4-6.3 8.2 0 4.5 2.4 7.8 6.5 7.8 3.1 0 5.3-2 5.4-4.8h2.7zM353.2 69.7h3.1l-9.1 8.9 9.7 10.3h-3.3l-9-10v10H342V69.7h2.6v8.8z"/><path class="mts1" d="M359.5 88.9h-2.8l7.2-19.1h2.7l7.2 19.1H371l-1.8-4.9h-8.1l-1.6 4.9zm9.2-7.1l-3.3-9.4-3.3 9.4h6.6zM383.2 81.3l-4.7 7.6h-3.2l5.2-7.9c-1.8-.1-5.2-1.1-5.2-5.5 0-3.1 1.7-5.7 6.6-5.7h8.2v19.1h-2.6v-7.6h-4.3zm-1.1-9.4c-3.4 0-4.2 2.1-4.2 3.6s.6 3.6 4.5 3.6h5v-7.2h-5.3zM187 111.1c-.3 2.8-2 6.9-8.1 6.9-5.7 0-9.1-3.7-9.1-9.8 0-10.2 7.4-10.5 9-10.5 6.1 0 7.6 3.6 7.9 6.5h-2.6c-.1-1.4-1-4.3-5.4-4.3-4.8 0-6.3 4-6.3 8.2 0 4.5 2.4 7.8 6.5 7.8 3.1 0 5.3-2 5.4-4.8h2.7zM188.4 100.4v-2.1h15v2.1h-6.2v17h-2.6v-17zM213.9 98.3c3.9 0 6.5 1.5 6.5 5.5 0 3.6-1.8 6-6.7 6h-5v7.6h-2.6V98.3h7.8zm-5.2 9.3h4.7c3 0 4.4-1.3 4.4-3.8 0-2.4-1.4-3.4-4.4-3.4h-4.7v7.2zM231.6 97.7c4.3 0 9.1 2.4 9.1 10.1 0 10-8 10.1-9.1 10.1-1.3 0-9.1-.1-9.1-10.1 0-6.6 3.8-10.1 9.1-10.1m0 18.1c1.3 0 6.4-.3 6.4-8 0-4.5-2-8-6.4-8-5.9 0-6.4 5.9-6.4 8 0 3.1.9 8 6.4 8M257.1 98.3h2.5v19.1h-2.5v-15.5l-10.2 15.5h-2.6V98.3h2.6v15.4zM262.3 100.4v-2.1h15v2.1h-6.2v17h-2.6v-17zM292.6 106.5v2.1h-10v6.7h11.3v2.1H280V98.3h13.6v2.1h-11v6.1zM294.8 115.2c2.5.5 4.5-1.5 4.5-8.7v-8.2h12v19.1h-2.6v-17h-6.9v6.6c0 8.9-3.3 11-7.1 10.4v-2.2zM318.5 106.1h5.5c2.3 0 6.2.8 6.2 5.7 0 5-4.2 5.6-6.2 5.6h-8.1V98.3h2.6v7.8zm0 9.2h5.2c.6 0 3.9-.1 3.9-3.5 0-1.6-.7-3.5-4.2-3.5h-4.9v7zM335.9 117.4h-2.5V98.3h2.5v8h9.7v-8h2.5v19.1h-2.5v-9h-9.7zM353.1 117.4h-2.8l7.2-19.1h2.7l7.2 19.1h-2.8l-1.8-4.9h-8.1l-1.6 4.9zm9.2-7.1l-3.3-9.4-3.3 9.4h6.6zM376.8 109.8l-4.7 7.6H369l5.2-7.9c-1.8-.1-5.2-1.1-5.2-5.6 0-3.1 1.7-5.7 6.6-5.7h8.2v19.1h-2.6v-7.6h-4.4zm-1-9.4c-3.4 0-4.2 2.1-4.2 3.6s.6 3.6 4.5 3.6h5v-7.2h-5.3zM182.1 126.8h3.1l-9.1 8.9 9.7 10.3h-3.3l-9-10v10h-2.6v-19.2h2.6v8.8zM196.1 126.3c4.3 0 9.1 2.4 9.1 10.1 0 10-8 10.1-9.1 10.1-1.3 0-9.1-.1-9.1-10.1-.1-6.7 3.7-10.1 9.1-10.1m0 18.1c1.3 0 6.4-.3 6.4-8 0-4.5-2-8-6.4-8-5.9 0-6.4 5.9-6.4 8 0 3.1.9 8 6.4 8M211.3 129.9V146h-2.5v-19.2h3.8l6 15.8 6-15.8h3.9V146h-2.6v-16.1l-6.3 16.1h-2zM235.7 146h-2.6v-19.2h14.8V146h-2.6v-17h-9.6zM252.8 146H250l7.2-19.1h2.7l7.2 19.1h-2.8l-1.8-5h-8.1l-1.6 5zm9.2-7.1l-3.3-9.4-3.3 9.4h6.6zM272.1 146h-2.6v-19.2h2.6v8h9.6v-8h2.6V146h-2.6v-9h-9.6zM301.7 126.8h2.6V146h-2.6v-15.5L291.5 146h-2.6v-19.2h2.6v15.4zM316 138.4l-4.7 7.6h-3.2l5.2-7.9c-1.8-.1-5.2-1.1-5.2-5.6 0-3.1 1.7-5.7 6.6-5.7h8.2V146h-2.6v-7.6H316zm-1.1-9.4c-3.4 0-4.2 2.1-4.2 3.6s.6 3.6 4.5 3.6h5V129h-5.3z"/><path fill="#de8a2e" d="M110.2 146.5L143.4 69v-.2h-33.1v-.1L77 146.3l.1.2z"/><path fill="#d35a2a" d="M77.1 146.5L43.9 69v-.2H77v-.1l33.3 77.6-.1.2z"/><path fill="#b12228" d="M33.2 68.7h33.4v77.7H33.2z"/><path fill="#efc030" d="M121.5 68.7h33.4v77.7h-33.4z"/></svg></div>
+              <div class="col-auto d-none d-lg-block"><a class="button button--sm" href="#">ПОДПИСАТЬСЯ НА НОВОСТИ <br/> КОМПАНИИ</a></div>
+              <div class="b-menu__burger">
+                <button class="burger active burger--st-2 js-close-menu"><span class="burger__icon"></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="b-menu__category">
+            <ul class="b-header-category">
+              <li class="b-header-category__item"><a href="#">Квартиры</a></li>
+              <li class="b-header-category__item"><a href="#">Машиноместа</a></li>
+              <li class="b-header-category__item"><a href="#">Коммерческие помещения</a></li>
+              <li class="b-header-category__item"><a href="#">Кладовые</a></li>
+            </ul>
+          </div>
+          <div class="b-menu__body js-toggle-panel"><span class="b-menu__signature">КВАРТАЛ</span>
+            <div class="row">
+              <div class="col-md-3 col-lg-4 order-lg-1">
+                <div class="b-footer-list js-toggle-panel-item">
+                  <div class="b-footer-list__header js-toggle-panel-button">
+                    <h4 class="b-footer-list__caption">О проекте</h4>
+                    <svg class="icon icon-fa-angle-down b-footer-list__icon">
+                      <use xlink:href="assets/img/sprite/sprite.svg#fa-angle-down"></use>
+                    </svg>
+                  </div>
+                  <div class="b-footer-list__body">
+                    <ul class="b-footer-list__list">
+                      <li class="b-footer-list__item"><a href="#">Новости</a></li>
+                      <li class="b-footer-list__item"><a href="#">О застройщике</a></li>
+                      <li class="b-footer-list__item"><a href="#">Документация</a></li>
+                      <li class="b-footer-list__item"><a href="#">Фотогалерея</a></li>
+                      <li class="b-footer-list__item"><a href="#">Инфраструктура</a></li>
+                      <li class="b-footer-list__item"><a href="#">Расположение</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-lg-4 order-lg-3">
+                <div class="b-footer-list js-toggle-panel-item">
+                  <div class="b-footer-list__header js-toggle-panel-button">
+                    <h4 class="b-footer-list__caption">Выбор помещения</h4>
+                    <svg class="icon icon-fa-angle-down b-footer-list__icon">
+                      <use xlink:href="assets/img/sprite/sprite.svg#fa-angle-down"></use>
+                    </svg>
+                  </div>
+                  <div class="b-footer-list__body">
+                    <ul class="b-footer-list__list">
+                      <li class="b-footer-list__item"><a href="#">Квартира</a></li>
+                      <li class="b-footer-list__item"><a href="#">Квартира с отделкой</a></li>
+                      <li class="b-footer-list__item"><a href="#">Машиноместа</a></li>
+                      <li class="b-footer-list__item"><a href="#">Кладовые</a></li>
+                      <li class="b-footer-list__item"><a href="#">Инфраструктура</a></li>
+                      <li class="b-footer-list__item"><a href="#">Коммерческие помещения</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-lg-6 order-lg-2">
+                <div class="b-footer-list js-toggle-panel-item">
+                  <div class="b-footer-list__header js-toggle-panel-button">
+                    <h4 class="b-footer-list__caption">Ипотечные программы</h4>
+                    <svg class="icon icon-fa-angle-down b-footer-list__icon">
+                      <use xlink:href="assets/img/sprite/sprite.svg#fa-angle-down"></use>
+                    </svg>
+                  </div>
+                  <div class="b-footer-list__body">
+                    <ul class="b-footer-list__list">
+                      <li class="b-footer-list__item"><a href="#">Военная ипотека</a></li>
+                      <li class="b-footer-list__item"><a href="#">Ипотека с материским капиталом</a></li>
+                      <li class="b-footer-list__item"><a href="#">Рассрочка</a></li>
+                      <li class="b-footer-list__item"><a href="#">Калькулятор</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-lg-6 order-lg-4">
+                <ul class="b-footer-list b-footer-list--bold">
+                  <li class="b-footer-list__item"><a class="b-footer-list__caption" href="#">Акции и спецпредложения</a></li>
+                  <li class="b-footer-list__item"><a class="b-footer-list__caption" href="#">Ход строительства</a></li>
+                  <li class="b-footer-list__item"><a class="b-footer-list__caption" href="#">Реконструкция микрорайона 29</a></li>
+                  <li class="b-footer-list__item"><a class="b-footer-list__caption" href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="b-menu__bottom"><a class="button button--sm button--sm-w100" href="#">ПОДПИСАТЬСЯ НА НОВОСТИ <br/> КОМПАНИИ</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="o-modal o-modal--lg" id="add-sources">
+        <div class="o-modal__center">
+          <div class="o-modal__content-transparent">
+            <button class="o-modal__close js-modal-close">
+              <svg class="icon icon-fa-times o-modal__close-button-icon">
+                <use xlink:href="assets/img/sprite/sprite.svg#fa-times"></use>
+              </svg>
+            </button>
+            <div class="o-modal__body">
+              <video controls="controls">
+                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg"/>
+                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4"/>
+                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm"/>
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- script markup only!-->
+    <script src="js/scripts.min.js"></script>
+    <!--google maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZIOVlLdQbI7U_aQQU1msO3zaHHRgimFQ&amp;callback=initMap" async="async" defer="defer"></script>
+  </body>
+</html>

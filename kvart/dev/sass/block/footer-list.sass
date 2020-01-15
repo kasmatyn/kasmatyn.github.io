@@ -1,0 +1,57 @@
+.b-footer-list
+	position: relative
+	margin-bottom: 2.3rem
+	&__header
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__caption
+		font-size: 1.6rem
+		font-weight: bold
+		color: $color-dark !important
+		margin-bottom: 0
+	&__icon
+		font-size: 2rem
+		color: $color-accent
+		+transition(all, .35s, ease)
+
+	&__list
+		padding-top: 1.65rem
+	&__item
+		margin-bottom: 1.4rem
+		&:last-child
+			margin-bottom: 0
+		a
+			color: $color-font
+
+
+
+	&--bold
+		.b-footer-list__item
+			margin-bottom: 2.3rem
+
+	+max($max-sml)
+		&__body
+			max-height: 0
+			visibility: hidden
+			opacity: 0
+			+transition(all, .35s, ease)
+		&.is-active
+			.b-footer-list__icon
+				+rotate(-180deg)
+			.b-footer-list__body
+				max-height: 100%
+				visibility: visible
+				opacity: 1
+	+min($sm1)
+		margin-top: 0
+		&__icon
+			display: none
+	+min($lg)
+		&__caption
+			font-size: 1.8rem
+		&__list
+			padding-top: 3rem
+		&__item
+			font-size: 1.8rem
+			margin-bottom: 1.3rem

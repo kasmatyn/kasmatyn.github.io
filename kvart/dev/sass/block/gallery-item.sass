@@ -1,0 +1,34 @@
+.b-gallery-item
+	position: relative
+	display: block
+	color: $color-dark
+	&__date
+		position: absolute
+		top: 0
+		left: 0
+		display: inline-block
+		color: #ffffff
+		background-color: $color-accent
+		font-size: 1.2rem
+		letter-spacing: .1em
+		font-weight: 700
+		text-transform: uppercase
+		padding: .9rem 1.6rem
+
+	&__picture
+		height: 20rem
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__body
+		padding-top: 2rem
+	&__section
+		display: block
+		color: $color-accent
+		font-weight: 500
+		margin-bottom: .5rem
+
+	+min($lg)
+		&__picture
+			height: 24rem

@@ -1,0 +1,36 @@
+.b-home-section
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+	background: #a1755c no-repeat center
+	background-size: cover
+
+	min-height: 100vh
+	padding: 10rem 0 0rem
+	z-index: 1
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		display: block
+		min-height: 75%
+		background-image: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.99) 1%, rgba(255, 255, 255, 0) 100%)
+		opacity: .95
+		z-index: -1
+	&__footer
+		margin: 2rem -15px 0
+		+translate(0, 38%)
+		.container
+			padding: 0
+
+	+min($sm)
+		padding: 18rem 0 0rem
+	+min($lg)
+		padding: 24rem 0 0rem
+		&__footer
+			margin: 2rem 0 0

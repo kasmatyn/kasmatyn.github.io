@@ -1,0 +1,51 @@
+.b-news-item
+	display: block
+	background-color: #ffffff
+	border: 1px solid #efefef
+	color: $color-dark
+	padding: 3.5rem 2rem
+	&__picture
+		display: none
+	&__body
+
+	&__date
+		display: block
+		font-size: 1.3rem
+		color: $color-accent
+		font-weight: 500
+		margin-bottom: 1.3rem
+
+	&__caption
+		margin-bottom: 1.5rem
+
+	&__text
+		overflow: hidden
+		text-overflow: ellipsis
+		display: -webkit-box
+		-webkit-line-clamp: 3
+		-webkit-box-orient: vertical
+		max-height: 6.3rem
+
+
+	+min($sm)
+		padding: 3.5rem 3rem
+	+min($lg)
+		display: flex
+		padding: 0
+		height: 24rem
+		&:hover,
+		&:focus
+			box-shadow: 0 20px 60px rgba(28, 46, 68, 0.08)
+			border-color: transparent
+		&__picture
+			display: block
+			flex-shrink: 0
+			width: 21.8rem
+			height: 24rem
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+		&__body
+			padding: 4rem 3rem

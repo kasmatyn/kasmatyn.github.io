@@ -1,0 +1,109 @@
+.c-page
+	display: flex
+	flex-direction: column
+	min-height: 100%
+
+.c-main
+	flex: 1 0 auto
+	display: flex
+	height: 100%
+	main
+		position: relative
+		flex: 1
+		max-width: 100%
+
+.c-header
+	padding: 1rem 0
+	color: #ffffff
+	+transition(all, .35s, ease)
+	&__logo
+		flex: 1
+		max-width: 100%
+		padding-left: 15px
+		padding-right: 15px
+	&__burger
+		order: 1
+		padding-left: 15px
+		padding-right: 15px
+		margin-left: auto
+	&__category
+		margin-top: 1.4rem
+
+	&--sticky
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		z-index: 10
+.c-footer
+	padding: 4rem 0
+	flex: 0 0 auto
+	background-color: $color-light
+	&__top-line
+		border-bottom: 1px solid #ebebeb
+		margin-bottom: 3.5rem
+	&__logo
+		text-align: center
+		margin-bottom: 3.3rem
+
+	&__social
+		display: flex
+		justify-content: center
+		margin-bottom: 4rem
+	&__body
+		border-bottom: 1px solid #ebebeb
+		padding-bottom: 1.2rem
+		margin-bottom: 3.5rem
+	&__bottom-line
+		color: #808080
+		text-align: center
+.red-link
+	color: $color-red
+.strong
+	color: $color-dark
+.nobr
+	white-space: nowrap
+	text-overflow: ellipsis
+	overflow: hidden
+.end
+	text-align: right
++min($sm1)
+	.c-footer
+		padding: 2rem 0
+		&__logo,
+		&__social
+			margin-bottom: 0
+		&__top-line
+			padding-bottom: 2.3rem
+		&__bottom-line
+			text-align: left
+		&__copyright
+			display: inline-block
+			max-width: 20rem
++min($lg)
+	.c-header
+		padding: 2.4rem 0
+		&__logo
+			flex: 0 0 auto
+
+		&__burger
+			order: 0
+			margin-left: 0
+
+	.c-footer
+		padding: 4rem 0 1.5rem
+		&__top-line
+			margin-bottom: 5.5rem
+		&__body
+			padding-bottom: 4.4rem
+			margin-bottom: 1.5rem
+		&__copyright
+			max-width: 100%
+
+
++min($xl)
+	.c-header
+		&__logo
+			padding-right: 29px
+		&__burger
+			padding-right: 26px
