@@ -6,7 +6,15 @@ $(document).ready(function(){
 		infinite: true,
 		slidesToShow: 5,
 		slidesToScroll: 1,
-		arrows: false
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1
+			}
+		}
+		]
 	});
 });
 
