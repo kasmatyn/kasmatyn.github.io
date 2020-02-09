@@ -16,9 +16,10 @@ $( document ).ready(function() {
 			$('.header__but-bot-line').css('transform','translate(-50%, 200%)');
 		}
 	};
-(function($) {
-  $.fn.countTo = function(options) {
-    return this.each(function() {
+
+	(function($) {
+		$.fn.countTo = function(options) {
+			return this.each(function() {
       //-- Arrange
       var FRAME_RATE = 60; // Predefine default frame rate to be 60fps
       var $el = $(this);
@@ -39,12 +40,12 @@ $( document ).ready(function() {
         } else {                                  // Terminate animation once it reaches the target count number
           $el.text(countTo);                      // Set to the final value before everything stops
           //cancelAnimationFrame(rafId);
-        }
-      };
-      rafId = requestAnimationFrame(countAction); // Initiates the looping function
-    });
+      }
   };
-}(jQuery));
+      rafId = requestAnimationFrame(countAction); // Initiates the looping function
+  });
+		};
+	}(jQuery));
 
 //-- Executing
 $('.work__number').countTo();
@@ -56,4 +57,9 @@ $('.choose__title').click(function(){
 
 });
 
-	});
+
+$('.header__services-main').click (function(){
+	$('.header__services-add').toggle();
+})
+
+});
