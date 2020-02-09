@@ -109,6 +109,9 @@
   font-size: 42px;
   color: #3a3a3a;
   line-height: 1.2; }
+  @media only screen and (max-width: 544px) {
+    .m-var-blog {
+      font-size: 30px; } }
 
 .b-var-font {
   font-weight: 700;
@@ -1719,7 +1722,8 @@ body {
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column;
+        padding-top: 0; } }
   .blog__content {
     max-width: 50%; }
     @media only screen and (max-width: 767px) {
@@ -1749,6 +1753,9 @@ body {
   .blog__title {
     margin-bottom: 20px;
     margin-top: 50px; }
+    @media only screen and (max-width: 767px) {
+      .blog__title {
+        margin-top: unset; } }
   .blog__image {
     margin-left: 30px; }
     @media only screen and (max-width: 767px) {
