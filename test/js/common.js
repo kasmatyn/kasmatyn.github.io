@@ -57,9 +57,25 @@ $('.choose__title').click(function(){
 
 });
 
+var wid = window.matchMedia('all and (min-width: 767px)');
+if(wid.matches){
+	$('.header__services-main').hover (function(){
+		$('.header__services-add').toggle();
+	});
+}else{
+}
 
-$('.header__services-main').click (function(){
-	$('.header__services-add').toggle();
-})
+var wid = window.matchMedia('all and (max-width: 767px)');
+if(wid.matches){
+	$('.header__services-main').click (function(){
+		$('.header__services-add').toggle();
+	})
+}else{
+}
+
+$('.asked__title').click(function(){
+	$(this).siblings('.asked__text').toggle('ease');
+	$('.asked__item').siblings('.m-var-title-font').css('color','#000000');
+});
 
 });
