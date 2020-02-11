@@ -80,7 +80,8 @@ if(wid.matches){
 
 $('.asked__title').click(function(){
 	$(this).siblings('.asked__text').toggle('ease');
-	$('.asked__item').siblings('.m-var-title-font').css('color','#000000');
+	$('.asked__title').css('color','#4c4c4c');
+	$(this).css('color','#000000');
 });
 
 
