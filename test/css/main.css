@@ -511,7 +511,7 @@ body {
       width: 100%;
       text-align: center; } }
   .header__main-li a,
-  .header__main-li button {
+  .header__main-li .header__services-main {
     color: #3a3a3a;
     font-weight: 700;
     padding: 1em;
@@ -521,11 +521,11 @@ body {
     cursor: pointer; }
     @media only screen and (max-width: 991px) {
       .header__main-li a,
-      .header__main-li button {
+      .header__main-li .header__services-main {
         padding-bottom: .2em;
         padding-left: .2em; } }
     .header__main-li a:hover,
-    .header__main-li button:hover {
+    .header__main-li .header__services-main:hover {
       color: #2355da; }
   .header__main-li .fas {
     font-size: .6rem;
@@ -576,9 +576,11 @@ body {
   @media only screen and (max-width: 767px) {
     .header__services-add-item {
       margin: 5px; } }
-  @media only screen and (max-width: 767px) {
-    .header__services-add-link {
-      padding-right: unset !important; } }
+  .header__services-add-link {
+    padding: 10px !important; }
+    @media only screen and (max-width: 767px) {
+      .header__services-add-link {
+        padding-right: unset !important; } }
   @media only screen and (max-width: 991px) {
     .header__button-wrap {
       display: -webkit-box;
@@ -2145,7 +2147,7 @@ body {
     transition: all .8s; }
     .glimpse__button:hover {
       border: 2px solid transparent;
-      background-color: #808285; }
+      background-color: #4064D7; }
 
 .build {
   padding: 10px; }
