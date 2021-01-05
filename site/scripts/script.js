@@ -35,8 +35,7 @@ $('.slider').slick({
     scrollTrigger: {
         trigger: "#anibox1",
         start: "top center",
-        onEnter: () => gsap.to("#anibox1", {backgroundColor: "#ffffff", duration: 10}),
-        onEnter: () => gsap.from("#ic1", {position: "static", duration: 1.5})
+        onEnter: () => gsap.to("#anibox1", {backgroundColor: "#ffffff", duration: 10})
     },
     x: -2000,
     duration: 1.5,
@@ -68,8 +67,7 @@ $('.slider').slick({
     scrollTrigger: {
         trigger: "#anibox2",
         start: "to center",
-        onEnter: () => gsap.to("#anibox2", {backgroundColor: "#ffffff", duration: 10}),
-        onEnter: () => gsap.from("#ic2", {position: "static", duration: 1.5})
+        onEnter: () => gsap.to("#anibox2", {backgroundColor: "#ffffff", duration: 10})
     },
     x: 2000,
     duration: 1.5,
@@ -101,10 +99,9 @@ gsap.from("#anim3-1",{
   scrollTrigger: {
       trigger: "#anibox3",
       start: "to center",
-      onEnter: () => gsap.to("#anibox3", {backgroundColor: "#ffffff", duration: 10}),
-      onEnter: () => gsap.from("#ic3", {position: "static", duration: 1.5})
+      onEnter: () => gsap.to("#anibox3", {backgroundColor: "#ffffff", duration: 10})
   },
-  x: 4000,
+  x: -1000,
   duration: 1.5,
   opacity: 0.1,
  
@@ -132,7 +129,7 @@ gsap.from("#anim3-4",{
       trigger: "#anibox3",
       start: "to center"
   },
-  x: -4000,
+  x: 1000,
   duration: 1.5,
   opacity: 0.1
 })
