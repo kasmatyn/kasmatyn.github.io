@@ -35,7 +35,8 @@ $('.slider').slick({
     scrollTrigger: {
         trigger: "#anibox1",
         start: "top center",
-        onEnter: () => gsap.to("#anibox1", {backgroundColor: "#ffffff"})
+        onEnter: () => gsap.to("#anibox1", {backgroundColor: "#ffffff", duration: 10}),
+        onEnter: () => gsap.from("#ic1", {position: "static", duration: 1.5})
     },
     x: -2000,
     duration: 1.5,
@@ -49,8 +50,7 @@ $('.slider').slick({
   },
     y: -500,
     duration: 1.5,
-    opacity: 0.1,
-    "--myColor": "#f7f7f7"
+    opacity: 0.1
   })
   gsap.from("#anim1-3",{
     scrollTrigger: {
@@ -59,8 +59,7 @@ $('.slider').slick({
     },
     x: 1000,
     duration: 1.5,
-    opacity: 0.1,
-    "--myColor": "#f7f7f7"
+    opacity: 0.1
   })
 
 //second-action
@@ -69,7 +68,8 @@ $('.slider').slick({
     scrollTrigger: {
         trigger: "#anibox2",
         start: "to center",
-        onEnter: () => gsap.to("#anibox2", {backgroundColor: "#ffffff"})
+        onEnter: () => gsap.to("#anibox2", {backgroundColor: "#ffffff", duration: 10}),
+        onEnter: () => gsap.from("#ic2", {position: "static", duration: 1.5})
     },
     x: 2000,
     duration: 1.5,
@@ -83,8 +83,7 @@ $('.slider').slick({
   },
     y: -500,
     duration: 1.5,
-    opacity: 0.1,
-    "--myColor": "#f7f7f7"
+    opacity: 0.1
   })
   gsap.from("#anim2-3",{
     scrollTrigger: {
@@ -93,8 +92,7 @@ $('.slider').slick({
     },
     x: -1000,
     duration: 1.5,
-    opacity: 0.1,
-    "--myColor": "#f7f7f7"
+    opacity: 0.1
   })
 
 
@@ -103,7 +101,8 @@ gsap.from("#anim3-1",{
   scrollTrigger: {
       trigger: "#anibox3",
       start: "to center",
-      onEnter: () => gsap.to("#anibox3", {backgroundColor: "#ffffff"})
+      onEnter: () => gsap.to("#anibox3", {backgroundColor: "#ffffff", duration: 10}),
+      onEnter: () => gsap.from("#ic3", {position: "static", duration: 1.5})
   },
   x: 4000,
   duration: 1.5,
@@ -117,8 +116,7 @@ gsap.from("#anim3-2",{
 },
   y: -500,
   duration: 1.5,
-  opacity: 0.1,
-  "--myColor": "#f7f7f7"
+  opacity: 0.1
 })
 gsap.from("#anim3-3",{
   scrollTrigger: {
@@ -127,8 +125,7 @@ gsap.from("#anim3-3",{
   },
   y: 1000,
   duration: 1.5,
-  opacity: 0.1,
-  "--myColor": "#f7f7f7"
+  opacity: 0.1
 })
 gsap.from("#anim3-4",{
   scrollTrigger: {
@@ -137,7 +134,6 @@ gsap.from("#anim3-4",{
   },
   x: -4000,
   duration: 1.5,
-  opacity: 0.1,
-  "--myColor": "#f7f7f7"
+  opacity: 0.1
 })
   }
